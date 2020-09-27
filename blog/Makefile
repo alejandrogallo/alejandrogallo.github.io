@@ -4,7 +4,6 @@ EMACS = emacs
 BATCH_EMACS = $(EMACS) -q --batch \
               -l ./blog.el index.org
 
-html: $(HTML_FILES)
 .PHONY: publish
 
 publish:

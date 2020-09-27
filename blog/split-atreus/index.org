@@ -2,3 +2,6 @@
 #+author: Alejandro Gallo
 
 * Building a split keyboard with recycled switches
+
+So, the other day doing dumpster diving I found an interesting piece
+of history
