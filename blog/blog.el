@@ -6,7 +6,7 @@
              :base-directory ,blog-file-path
              :publishing-directory ,blog-file-path
              :section-numbers nil
-             :table-of-contents nil
+             :table-of-contents t
              :publishing-function org-html-publish-to-html
              :htmlized-source t
              :recursive t))))
