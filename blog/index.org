@@ -1,3 +1,4 @@
-#+title: Plain and simple blog
+#+title: My simple blog
+#+author: Alejandro Gallo
 
-* [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                 :keyboard:
+* [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                                        :keyboard:
