@@ -1,0 +1,3 @@
+#+title: Plain and simple blog
+
+* [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                 :keyboard:

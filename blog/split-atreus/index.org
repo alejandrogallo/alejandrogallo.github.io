@@ -1,0 +1,4 @@
+#+title: Building a split keyboard with recycled switches
+#+author: Alejandro Gallo
+
+* Building a split keyboard with recycled switches
