@@ -1,0 +1,14 @@
+#+include: templates/header.org
+* About me
+
+My name is Alejandro Gallo and I am
+a physicist at the Technical University of Vienna
+[[https://cqc.itp.tuwien.ac.at]].
+I am currently pursuing a PhD in theoretical
+physics in the field of condensed matter.
+
+More info to come  ;)
+
+# * Projects
+# I enjoy building things, be it on the computer or with my hands.
+

@@ -1,6 +1,5 @@
-#+setupfile: ../theme.setup
+#+include: templates/header.org
 #+title: Building a split keyboard with recycled switches
-#+author: Alejandro Gallo
 #+date: 27 September 2020
 
 So, the other day doing dumpster diving I found an interesting piece

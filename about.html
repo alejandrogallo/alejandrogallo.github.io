@@ -6,7 +6,7 @@
 <!-- 2020-11-26 Thu 20:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Building a split keyboard with recycled switches</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Alejandro Gallo" />
 <style type="text/css">
@@ -230,180 +230,29 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Building a split keyboard with recycled switches</h1>
 <div>
   <a href="index.html"> HOME </a>
   <a href="blog/index.html"> BLOG </a>
   <a href="about.html"> ABOUT </a>
 </div>
+<div id="outline-container-org82c9c37" class="outline-2">
+<h2 id="org82c9c37">About me</h2>
+<div class="outline-text-2" id="text-org82c9c37">
 <p>
-So, the other day doing dumpster diving I found an interesting piece
-of history, here are some crappy shots I took
-</p>
-
-
-<div class="figure">
-<p><img src="38.jpg" alt="38.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="39.jpg" alt="39.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="40.jpg" alt="40.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="41.jpg" alt="41.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="42.jpg" alt="42.jpg" width="500px" />
-</p>
-</div>
-
-<p>
-At first while in the dumpster I thought they switches
-where some kind of KPT switches I saw once online, to my surprise
-after desoldering the switches I found out they were actually
-<code>Tec</code> switches and the only information I could find online was
-in <a href="https://deskthority.net/wiki/TEC_switch">deskthority</a>.
+My name is Alejandro Gallo and I am
+a physicist at the Technical University of Vienna
+<a href="https://cqc.itp.tuwien.ac.at">https://cqc.itp.tuwien.ac.at</a>.
+I am currently pursuing a PhD in theoretical
+physics in the field of condensed matter.
 </p>
 
 <p>
-Here is a show of the bare board without the keycps
-</p>
-
-
-<div class="figure">
-<p><img src="9.jpg" alt="9.jpg" width="500px" />
+More info to come  ;)
 </p>
 </div>
-
-
-<div class="figure">
-<p><img src="6.jpg" alt="6.jpg" width="500px" />
-</p>
-</div>
-
-<p>
-and to my delight the keycaps turned out to be double-shot, in very
-nice shape after a thorough clean-up
-</p>
-
-
-<div class="figure">
-<p><img src="44.jpg" alt="44.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="58.jpg" alt="58.jpg" width="500px" />
-</p>
-</div>
-
-<p>
-The switches are clicky and quite frankly not so good.
-I have to say while in the board they sounded better, but in the
-actual project they lost the hollow sound, but still.
-You can hear <a href="5.mp4">here</a> how it sounded.
-</p>
-
-<p>
-Anyways I wanted to build something with them, so I set out
-to build a quick <a href="https://atreus.technomancy.us/">atreus</a>-like keyboard but in split-mode.
-</p>
-
-<p>
-In the future I want to tweak the layouts so I wanted
-to have a simple a nice format for the coordinates
-of every key and no existing solutions quite fit my needs.
-I've been a fan of <a href="https://asymptote.sourceforge.io">asymptote</a> for many years
-but the language and the libraries haven't quite convinced me,
-so I wrote a haskell script to do this using the excellent
-<a href="https://archives.haskell.org/projects.haskell.org/diagrams/doc/manual.html">diagrams</a> library.
-</p>
-
-<p>
-The result is in <a href="https://github.com/alejandrogallo/split-atreus">this repository</a>. To do quickly a keyboard without
-many tools I just bought some thin wood sheets and created
-the first test for the layout:
-</p>
-
-
-<div class="figure">
-<p><object type="image/svg+xml" data="Nammu-Tec-left.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
-</p>
-</div>
-
-<p>
-In principle the idea is to drill holes where the <b>three</b>
-switch's legs are and glue the bottom of the switch to the
-wood (yes, I know is not the best way to go but well, at least
-I'm recycling).
-</p>
-
-<p>
-Here I am punching holes into the wood to have a guide
-for the <b>hand drill</b>
-</p>
-
-
-<div class="figure">
-<p><img src="100.jpg" alt="100.jpg" width="500px" />
-</p>
-</div>
-
-<p>
-and after much work, this is what I got
-</p>
-
-
-<div class="figure">
-<p><img src="62.jpg" alt="62.jpg" width="500px" />
-</p>
-</div>
-
-<div class="figure">
-<p><img src="61.jpg" alt="61.jpg" width="500px" />
-</p>
-</div>
-
-<p>
-which in total ends up looking like this
-</p>
-
-
-<div class="figure">
-<p><img src="53.jpg" alt="53.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="4.jpg" alt="4.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="11.jpg" alt="11.jpg" width="500px" />
-</p>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: 27 September 2020</p>
 <p class="author">Author: Alejandro Gallo</p>
 <p class="date">Created: 2020-11-26 Thu 20:53</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>

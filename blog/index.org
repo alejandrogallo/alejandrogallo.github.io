@@ -1,5 +1,4 @@
-#+SETUPFILE: theme.setup
-#+title: My simple blog
-#+author: Alejandro Gallo
+#+include: templates/header.org
+#+title: BLOG
 
 * [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                                        :keyboard:
