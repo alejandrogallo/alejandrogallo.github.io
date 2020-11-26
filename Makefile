@@ -17,8 +17,12 @@ $(info $(TEMPLATE_LNKS))
 
 .PHONY: publish entr
 
-entr:
-	ls -1 $(ORG_FILES) | entr make
+watch:
+	qutebrowser index.html
+	( \
+		python3 -m http.server 8888 &  \
+		ls -1 $(ORG_FILES) | entr make \
+	)
 
 clean:
 	find . -name '*.html~' | xargs -n1 rm -v

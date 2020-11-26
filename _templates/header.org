@@ -10,8 +10,8 @@
 
 #+begin_export html
 <div>
-  <a href="index.html"> HOME </a>
-  <a href="blog/index.html"> BLOG </a>
-  <a href="about.html"> ABOUT </a>
+  <a href="/"> HOME </a>
+  <a href="/blog"> BLOG </a>
+  <a href="/about.html"> ABOUT </a>
 </div>
 #+end_export

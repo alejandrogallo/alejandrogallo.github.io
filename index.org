@@ -1,6 +1,5 @@
 #+include: templates/header.org
-
-* WELCOME
+* WELCOME ALL
 
 - I /maintain/ a blog [[file:blog/index.org][here]].
 - Some information about me you can find [[file:about.org][here]].
