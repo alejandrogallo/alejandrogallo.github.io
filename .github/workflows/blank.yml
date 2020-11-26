@@ -24,4 +24,4 @@ jobs:
       uses: cachix/install-nix-action@v10
 
     - name: Build blog
-      run: cd blog; nix-shell --run 'make publish'
+      run: nix-shell --run 'make publish'
