@@ -1,17 +1,27 @@
 #+options: toc:nil
 #+author: Alejandro Gallo
-#+html_head: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+#+html_head: <link rel="stylesheet" type="text/css" href="/css/org.css"/>
 
 #+begin_comment
-##+html_head: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-##+html_head: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 ##+html_head: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
 #+end_comment
 
 #+begin_export html
-<div>
+<style type="text/css">
+nav {
+  position: relative;
+  top: 0;
+}
+nav > a:hover {
+  color: red;
+}
+</style>
+#+end_export
+
+#+begin_export html
+<nav>
   <a href="/"> HOME </a>
   <a href="/blog"> BLOG </a>
   <a href="/about.html"> ABOUT </a>
-</div>
+</nav>
 #+end_export

@@ -1,14 +1,30 @@
 #+include: templates/header.org
 * About me
 
-My name is Alejandro Gallo and I am
+My name is Alejandro Gallo and I am currently
 a physicist at the Technical University of Vienna
 [[https://cqc.itp.tuwien.ac.at]].
 I am currently pursuing a PhD in theoretical
 physics in the field of condensed matter.
 
-More info to come  ;)
+* Publications
+- [[http://arxiv.org/abs/2010.15071v1][A periodic equation-of-motion coupled-cluster implementation applied to   \(F\)-centers in alkaline earth oxides]]
+- [[https://doi.org/10.1103/physrevlett.123.156401][Duality of Ring and Ladder Diagrams and Its Importance for Many-Electron Perturbation Theories]]
+- [[https://doi.org/10.1021/acs.nanolett.7b01796][Protecting a Diamond Quantum Memory by Charge State Control]]
+- [[https://doi.org/10.5281/zenodo.4276451][On the joint-measurability of observables]]
 
-# * Projects
-# I enjoy building things, be it on the computer or with my hands.
+* Projects
+I enjoy building things, be it on the computer or with my hands.
+Maybe check out my github profile for some examples [[https://github.com/alejandrogallo][here]].
+- I am the main author and maintainer of [[https://github.com/papis/papis][papis]].
+- I try to optimize my keyboard layout
+  in [[https://github.com/alejandrogallo/split-atreus/][the split keyboard lab]].
+- I build my own [[https://github.com/alejandrogallo/dikis][dictionaries]] for [[https://github.com/alejandrogallo/python-milon][hebrew]] and [[https://github.com/alejandrogallo/aramorph][arabic]].
 
+
+* Music
+- I had much fun playing in Baasztian's album
+  [[https://baasztian.bandcamp.com/album/diagnose-chronisch-ironisch][diagnose: chronisch ironisch]].
+- I released a demo back in 2006 called *Open 24 Hours*
+  under the artistic name of *Nango*, you can check out the bandcamp
+  [[https://nango.bandcamp.com][here]].

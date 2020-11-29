@@ -1,6 +1,7 @@
 #+include: templates/header.org
-#+title: Building a split keyboard with recycled switches
 #+date: 27 September 2020
+
+* Building a split keyboard with recycled switches
 
 So, the other day doing dumpster diving I found an interesting piece
 of history, here are some crappy shots I took

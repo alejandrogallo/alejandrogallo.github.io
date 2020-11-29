@@ -4,3 +4,7 @@
 - I /maintain/ a blog [[file:blog/index.org][here]].
 - Some information about me you can find [[file:about.org][here]].
 - That's basically it.
+
+#+begin_note
+This site has been typeset using [[https://orgmode.org][org mode]].
+#+end_note

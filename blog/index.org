@@ -1,4 +1,4 @@
 #+include: templates/header.org
-#+title: BLOG
 
-* [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                                        :keyboard:
+* BLOG
+** [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                :keyboard:
