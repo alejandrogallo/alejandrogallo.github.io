@@ -1,5 +1,5 @@
 #+include: templates/header.org
-#+date: 27 September 2020
+#+date: 29 November 2020
 
 * Building a split keyboard with recycled switches
 
@@ -95,4 +95,44 @@ file:4.jpg
 #+attr_html: :width 500px
 file:11.jpg
 
+Although we are almost there, it is not over.
+It is not so nice to leave the sides open to dust
+and other inconvenients, so I would like to cover them.
+I bought some 3mm wood sticks to cover the sides
+by gluing them together and some plexiglass to
+have the front panel be able to shine light through.
+
+Here you see the raw material and I cut
+myself a bit cutting this plexiglass,
+so be careful!
+
+#+attr_html: :width 500px
+file:photo5339261905551863206.jpg
+
+Next time I will document better the process of
+gluing everything together and so on, but since it was
+so messy I kind of forget.
+After sanding the edges it is a fair enough result.
+
+#+attr_html: :width 500px
+file:photo5339261905551863203.jpg
+#+attr_html: :width 500px
+file:photo5339261905551863204.jpg
+#+attr_html: :width 500px
+file:photo5339261905551863207.jpg
+#+attr_html: :width 500px
+file:photo5339261905551863208.jpg
+#+attr_html: :width 500px
+file:photo5339261905551863211.jpg
+
+And that's all, if I find time and people are interested
+I will at some point write a tutorial of how
+to write from scratch a
+[[https://docs.qmk.fm/#/][quantum mechanical keyboard]] configuration for
+a hand-wired split keyboard.
+
+If you have comments you
+can take a look at this
+reddit
+thread.
 
