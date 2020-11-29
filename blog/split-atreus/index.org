@@ -134,5 +134,5 @@ a hand-wired split keyboard.
 If you have comments you
 can take a look at this
 reddit
-thread.
+[[https://www.reddit.com/r/MechanicalKeyboards/comments/k2za9a/handwired_split_mechanical_keyboard_with_recycles/][thread]].
 
