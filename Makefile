@@ -15,14 +15,20 @@ $(info $(TEMPLATE_LNKS))
 %/templates: _templates
 	ln -vfrs ./_templates $@
 
-.PHONY: publish entr
+.PHONY: publish entr dev watch serve
+
+dev: watch serve
+
+./env/bin/livereload:
+	virtualenv env
+	./env/bin/pip install livereload
 
 watch:
-	qutebrowser index.html
-	( \
-		python3 -m http.server 8888 &  \
-		ls -1 $(ORG_FILES) | entr make \
-	)
+	@ls -1 $(ORG_FILES) | entr make publish
+
+serve: ./env/bin/livereload
+	#@python3 -m http.server 8888
+	@$< -p 8888 .
 
 clean:
 	find . -name '*.html~' | xargs -n1 rm -v
