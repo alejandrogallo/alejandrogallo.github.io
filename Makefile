@@ -7,7 +7,7 @@ TEMPLATE_LNKS \
 EMACS = emacs
 BATCH_EMACS = $(EMACS) -q --batch \
               -l ./site.el index.org
-publish: $(TEMPLATE_LNKS)
+publish: deps $(TEMPLATE_LNKS)
 	$(BATCH_EMACS) --eval '(publish-site)'
 
 $(info $(TEMPLATE_LNKS))
@@ -15,7 +15,7 @@ $(info $(TEMPLATE_LNKS))
 %/templates: _templates
 	ln -vfrs ./_templates $@
 
-.PHONY: publish entr dev watch serve
+.PHONY: publish entr dev watch serve deps
 
 dev: watch serve
 
@@ -32,3 +32,11 @@ serve: ./env/bin/livereload
 
 clean:
 	find . -name '*.html~' | xargs -n1 rm -v
+	find . -name '*.html' | xargs -n1 rm -v
+
+DEPS = lisp/external/htmlize
+deps: $(DEPS)
+
+lisp/external/htmlize:
+	mkdir -p ${@D}
+	git clone https://github.com/hniksic/emacs-htmlize $@

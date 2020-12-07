@@ -3,6 +3,7 @@
 #+html_head: <link rel="stylesheet" type="text/css" href="/css/org.css"/>
 
 #+begin_comment
+##+html_head: <link rel="stylesheet" type="text/css" href="/css/ob.css"/>
 ##+html_head: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
 #+end_comment
 

@@ -1,3 +1,7 @@
+(require 'org)
+(add-to-list 'load-path "./lisp/external/htmlize")
+(require 'htmlize)
+
 (defun publish-site ()
   (interactive)
   (let* ((site-file-path (file-name-directory (buffer-file-name)))
@@ -8,7 +12,8 @@
              :section-numbers nil
              :table-of-contents t
              :publishing-function org-html-publish-to-html
-             :htmlized-source t
+             ;;:publishing-function org-html-export-to-html
+             :htmlized-source nil
              :language en
              :exclude ".*templates.*"
              :recursive t))))

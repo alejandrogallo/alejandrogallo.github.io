@@ -246,19 +246,219 @@ nav > a:hover {
   <a href="/about.html"> ABOUT </a>
 </nav>
 
-<div id="outline-container-orgf155ba1" class="outline-2">
-<h2 id="orgf155ba1">BLOG</h2>
-<div class="outline-text-2" id="text-orgf155ba1">
+<div id="outline-container-org335d7d4" class="outline-2">
+<h2 id="org335d7d4">Getting paper references with papis</h2>
+<div class="outline-text-2" id="text-org335d7d4">
+<p>
+Today I would like to talk about how I normally
+download references of papers using
+the tool <a href="https://github.com/papis/papis">Papis</a>.
+I will be writing in the future more posts about
+this tool and about how it makes my life easier.
+</p>
+
+<p>
+Usually when I am researching a topic and
+I read a paper about it, I want to check out some references
+cited in the paper.
+However, I find it very tiresome to copy the reference
+or the link (if any is available in the pdf),
+paste it in the browser and download it with papis.
+I mean, this is still ok, and sometimes I do exactly this.
+But most of the times, I can do better, and I want to
+tell you exactly how.
+</p>
+
+<p>
+To see how this works we are going to work with the following
+landmark paper:
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-bibtex"><span style="font-weight: bold;">@article</span>{<span style="font-weight: bold; text-decoration: underline;">Theory.of.SuperBardee1957</span>,
+  <span style="font-weight: bold; font-style: italic;">author</span> = {Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.},
+  <span style="font-weight: bold; font-style: italic;">doi</span> = {<span style="text-decoration: underline;">10.1103/PhysRev.108.1175</span>},
+  <span style="font-weight: bold; font-style: italic;">issue</span> = {5},
+  <span style="font-weight: bold; font-style: italic;">journal</span> = {Physical Review},
+  <span style="font-weight: bold; font-style: italic;">pages</span> = {1175--1204},
+  <span style="font-weight: bold; font-style: italic;">title</span> = {Theory of Superconductivity},
+  <span style="font-weight: bold; font-style: italic;">url</span> = {<span style="text-decoration: underline;">http://link.aps.org/article/10.1103/PhysRev.108.1175</span>},
+  <span style="font-weight: bold; font-style: italic;">volume</span> = {108},
+  <span style="font-weight: bold; font-style: italic;">year</span> = {1957},
+}
+</pre>
 </div>
-<div id="outline-container-org1f8ed91" class="outline-3">
-<h3 id="org1f8ed91"><a href="get-paper-references.html">Getting paper references with papis</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="papis">papis</span>&#xa0;<span class="programming">programming</span></span></h3>
+
+<p>
+Right now when papis adds a paper through the
+<code>doi</code> importer, i.e., when you do something like
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">papis add --from doi 10.1103/PhysRev.108.1175
+</pre>
 </div>
-<div id="outline-container-orge1fb118" class="outline-3">
-<h3 id="orge1fb118"><a href="split-atreus/index.html">Building a split keyboard with recycled switches</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keyboard">keyboard</span></span></h3>
+<p>
+or simply
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">papis add 10.1103/PhysRev.108.1175
+</pre>
+</div>
+
+<p>
+you get information similar to the following
+in the <code>info.yaml</code> file
+</p>
+
+<div class="org-src-container">
+<pre class="src src-yaml">abbrev_journal_title: Phys. Rev.
+author: Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.
+author_list:
+- given_name: J.
+  surname: Bardeen
+- given_name: L. N.
+  surname: Cooper
+- given_name: J. R.
+  surname: Schrieffer
+citations:
+- doi: 10.1007/BF01504252
+- doi: 10.1098/rspa.1935.0048
+- doi: 10.1016/S0031-8914(35)90097-0
+- doi: 10.1103/PhysRev.74.562
+- doi: 10.1098/rspa.1953.0040
+- doi: 10.1103/PhysRev.97.1724
+- doi: 10.1007/BFb0109284
+- doi: 10.1007/BF01322787
+- doi: 10.1103/PhysRev.78.477
+- doi: 10.1103/PhysRev.78.487
+- doi: 10.1103/PhysRev.79.845
+- doi: 10.1103/PhysRev.79.167.3
+- doi: 10.1103/PhysRev.80.567
+- doi: 10.1103/PhysRev.81.829
+- doi: 10.1103/RevModPhys.23.261
+- doi: 10.1098/rspa.1952.0212
+- doi: 10.1103/PhysRev.99.1140
+- doi: 10.1103/PhysRev.106.162
+- doi: 10.1103/PhysRev.100.1215
+- doi: 10.1103/PhysRev.102.656
+- doi: 10.1103/PhysRev.102.662
+- doi: 10.1103/PhysRev.104.844
+- doi: 10.1002/prop.19530010302
+- doi: 10.1103/PhysRev.107.354
+- doi: 10.1103/PhysRev.100.481
+- doi: 10.1103/PhysRev.100.502
+- doi: 10.1103/PhysRev.104.1189
+- doi: 10.1103/PhysRev.101.1431
+- doi: 10.1103/PhysRev.107.901
+- doi: 10.1007/BF02856068
+- doi: 10.1098/rspa.1948.0123
+- doi: 10.1103/PhysRev.106.208
+doc_url: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRev.108.1175/fulltext
+doi: 10.1103/PhysRev.108.1175
+files:
+- Theory-of-Superconductivity-Bardeen-J.-and-Cooper-L.-N.-and-Schrieffer-J.-R..pdf
+first_page: '1175'
+full_journal_title: Physical Review
+issue: '5'
+journal: Physical Review
+last_page: '1204'
+pages: 1175--1204
+ref: Theory.of.SuperBardee1957
+title: Theory of Superconductivity
+url: http://link.aps.org/article/10.1103/PhysRev.108.1175
+volume: '108'
+year: '1957'
+</pre>
+</div>
+
+<p>
+Take a look at the <code>citations</code> section,
+we get a list of <b>most</b> <code>doi</code> strings referenced in the paper.
+</p>
+
+<p>
+Papis has a command called <code>explore</code> which offers much functionality.
+One of the subcommands of <code>explore</code> is called <code>citations</code>, so that
+you can explore the citations in the <code>citations</code> field of your
+info file.
+Since explore commands are quite long, I normally define
+a <code>bash</code> function or an alias to use them.
+In this case I define the following function in my
+<a href="https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work">~/.bashrc</a> file
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="font-weight: bold;">citget</span>() {
+  <span style="font-weight: bold; font-style: italic;">query</span>=$<span style="font-weight: bold; font-style: italic;">1</span>
+  <span style="font-weight: bold;">shift</span>
+  papis explore citations -s <span style="font-style: italic;">"$query"</span> pick cmd <span style="font-style: italic;">"papis add --from doi {doc[doi]} $@"</span>
+}
+</pre>
+</div>
+
+<p>
+If this seems like a magic incantation to you, let us break it down.
+The help message of the <code>citations</code> command reads like
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">papis explore citations -h
+</pre>
+</div>
+
+<pre class="example">
+Usage: papis explore citations [OPTIONS] [QUERY]
+
+  Query the citations of a paper
+
+  Example:
+
+  Go through the citations of a paper and export it in a yaml file
+
+      papis explore citations 'einstein' export --format yaml einstein.yaml
+
+Options:
+  --doc-folder PATH            Apply action to a document path
+  -h, --help                   Show this message and exit.
+  -s, --save                   Store the citations in the document's folder
+                               for later use
+
+  --rmfile                     Remove the stored citations file
+  -m, --max-citations INTEGER  Number of citations to be retrieved
+</pre>
+
+<p>
+The flag <code>-s</code> means that the citations downloaded should be stored in
+a <code>citations.yaml</code> file in the document's folder.
+Whichever citation we then choose, we will pass it to the
+<code>cmd</code> command, which accepts a string that will be run in the shell. In this case,
+we select a cited document and apply the <code>papis add --from doi {doc[doi]}</code>
+format, which replaces the <code>{doc[doi]}</code> part in the format string by
+the <code>doi</code> of the selected document.
+</p>
+
+<p>
+Here you can see it in action, it first
+checks if a citation <code>doi</code> is already in the library,
+in which case the information is already there.
+If the <code>doi</code> of the citation is not in our library,
+then the infomation gets downloaded via <a href="http://crossref.org">crossref</a>.
+</p>
+
+<div class="org-center">
+<img src="/images/get-paper-references.gif"/>
+</div>
+
+<p>
+And this is pretty much it!
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
+<p class="date">Date: 06-12-2020 (d-m-y)</p>
 <p class="author">Author: Alejandro Gallo</p>
 <p class="date">Created: 2020-12-07 Mon 17:48</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>

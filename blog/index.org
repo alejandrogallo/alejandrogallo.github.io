@@ -1,4 +1,5 @@
 #+include: templates/header.org
 
 * BLOG
+** [[file:get-paper-references.org][Getting paper references with papis]]                    :papis:programming:
 ** [[file:split-atreus/index.org][Building a split keyboard with recycled switches]]                :keyboard:
