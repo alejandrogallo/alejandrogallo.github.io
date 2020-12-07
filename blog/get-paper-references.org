@@ -183,4 +183,4 @@ then the infomation gets downloaded via [[http://crossref.org][crossref]].
 
 And this is pretty much it!
 
-[[https://www.reddit.com/r/commandline/comments/k8kbw5/checking_out_paper_references_easily_with_papis/][Reddit post]]
+For comments check out the [[https://www.reddit.com/r/commandline/comments/k8kbw5/checking_out_paper_references_easily_with_papis/][Reddit post]].
