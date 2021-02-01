@@ -3,7 +3,7 @@
 
 - I /maintain/ a blog [[file:blog/index.org][here]].
 - Some information about me you can find [[file:about.org][here]].
-- That's basically it.
+- You can also find me on [[https://github.com/alejandrogallo][github]] or [[https://www.linkedin.com/in/alejandro-gallo-6664a7205/][linkedin]].
 
 #+begin_note
 This site has been typeset using [[https://orgmode.org][org mode]].
