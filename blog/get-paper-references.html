@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-30 Sat 15:51 -->
+<!-- 2021-02-13 Sat 17:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -186,7 +199,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -276,16 +289,16 @@ landmark paper:
 
 
 <div class="org-src-container">
-<pre class="src src-bibtex"><span style="font-weight: bold;">@article</span>{<span style="font-weight: bold; text-decoration: underline;">Theory.of.SuperBardee1957</span>,
-  <span style="font-weight: bold; font-style: italic;">author</span> = {Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.},
-  <span style="font-weight: bold; font-style: italic;">doi</span> = {<span style="text-decoration: underline;">10.1103/PhysRev.108.1175</span>},
-  <span style="font-weight: bold; font-style: italic;">issue</span> = {5},
-  <span style="font-weight: bold; font-style: italic;">journal</span> = {Physical Review},
-  <span style="font-weight: bold; font-style: italic;">pages</span> = {1175--1204},
-  <span style="font-weight: bold; font-style: italic;">title</span> = {Theory of Superconductivity},
-  <span style="font-weight: bold; font-style: italic;">url</span> = {<span style="text-decoration: underline;">http://link.aps.org/article/10.1103/PhysRev.108.1175</span>},
-  <span style="font-weight: bold; font-style: italic;">volume</span> = {108},
-  <span style="font-weight: bold; font-style: italic;">year</span> = {1957},
+<pre class="src src-bibtex"><span style="color: #0184bc;">@article</span>{<span style="font-weight: bold; text-decoration: underline;">Theory.of.SuperBardee1957</span>,
+  <span style="color: #8b4513;">author</span> = {Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.},
+  <span style="color: #8b4513;">doi</span> = {<span style="text-decoration: underline;">10.1103/PhysRev.108.1175</span>},
+  <span style="color: #8b4513;">issue</span> = {5},
+  <span style="color: #8b4513;">journal</span> = {Physical Review},
+  <span style="color: #8b4513;">pages</span> = {1175--1204},
+  <span style="color: #8b4513;">title</span> = {Theory of Superconductivity},
+  <span style="color: #8b4513;">url</span> = {<span style="text-decoration: underline;">http://link.aps.org/article/10.1103/PhysRev.108.1175</span>},
+  <span style="color: #8b4513;">volume</span> = {108},
+  <span style="color: #8b4513;">year</span> = {1957},
 }
 </pre>
 </div>
@@ -313,63 +326,63 @@ in the <code>info.yaml</code> file
 </p>
 
 <div class="org-src-container">
-<pre class="src src-yaml">abbrev_journal_title: Phys. Rev.
-author: Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.
-author_list:
-- given_name: J.
-  surname: Bardeen
-- given_name: L. N.
-  surname: Cooper
-- given_name: J. R.
-  surname: Schrieffer
-citations:
-- doi: 10.1007/BF01504252
-- doi: 10.1098/rspa.1935.0048
-- doi: 10.1016/S0031-8914(35)90097-0
-- doi: 10.1103/PhysRev.74.562
-- doi: 10.1098/rspa.1953.0040
-- doi: 10.1103/PhysRev.97.1724
-- doi: 10.1007/BFb0109284
-- doi: 10.1007/BF01322787
-- doi: 10.1103/PhysRev.78.477
-- doi: 10.1103/PhysRev.78.487
-- doi: 10.1103/PhysRev.79.845
-- doi: 10.1103/PhysRev.79.167.3
-- doi: 10.1103/PhysRev.80.567
-- doi: 10.1103/PhysRev.81.829
-- doi: 10.1103/RevModPhys.23.261
-- doi: 10.1098/rspa.1952.0212
-- doi: 10.1103/PhysRev.99.1140
-- doi: 10.1103/PhysRev.106.162
-- doi: 10.1103/PhysRev.100.1215
-- doi: 10.1103/PhysRev.102.656
-- doi: 10.1103/PhysRev.102.662
-- doi: 10.1103/PhysRev.104.844
-- doi: 10.1002/prop.19530010302
-- doi: 10.1103/PhysRev.107.354
-- doi: 10.1103/PhysRev.100.481
-- doi: 10.1103/PhysRev.100.502
-- doi: 10.1103/PhysRev.104.1189
-- doi: 10.1103/PhysRev.101.1431
-- doi: 10.1103/PhysRev.107.901
-- doi: 10.1007/BF02856068
-- doi: 10.1098/rspa.1948.0123
-- doi: 10.1103/PhysRev.106.208
-doc_url: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRev.108.1175/fulltext
-doi: 10.1103/PhysRev.108.1175
-files:
+<pre class="src src-yaml"><span style="color: #8b4513;">abbrev_journal_title</span>: Phys. Rev.
+<span style="color: #8b4513;">author</span>: Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.
+<span style="color: #8b4513;">author_list</span>:
+- <span style="color: #8b4513;">given_name</span>: J.
+  <span style="color: #8b4513;">surname</span>: Bardeen
+- <span style="color: #8b4513;">given_name</span>: L. N.
+  <span style="color: #8b4513;">surname</span>: Cooper
+- <span style="color: #8b4513;">given_name</span>: J. R.
+  <span style="color: #8b4513;">surname</span>: Schrieffer
+<span style="color: #8b4513;">citations</span>:
+- <span style="color: #8b4513;">doi</span>: 10.1007/BF01504252
+- <span style="color: #8b4513;">doi</span>: 10.1098/rspa.1935.0048
+- <span style="color: #8b4513;">doi</span>: 10.1016/S0031-8914(35)90097-0
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.74.562
+- <span style="color: #8b4513;">doi</span>: 10.1098/rspa.1953.0040
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.97.1724
+- <span style="color: #8b4513;">doi</span>: 10.1007/BFb0109284
+- <span style="color: #8b4513;">doi</span>: 10.1007/BF01322787
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.78.477
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.78.487
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.79.845
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.79.167.3
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.80.567
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.81.829
+- <span style="color: #8b4513;">doi</span>: 10.1103/RevModPhys.23.261
+- <span style="color: #8b4513;">doi</span>: 10.1098/rspa.1952.0212
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.99.1140
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.106.162
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.100.1215
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.102.656
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.102.662
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.104.844
+- <span style="color: #8b4513;">doi</span>: 10.1002/prop.19530010302
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.107.354
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.100.481
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.100.502
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.104.1189
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.101.1431
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.107.901
+- <span style="color: #8b4513;">doi</span>: 10.1007/BF02856068
+- <span style="color: #8b4513;">doi</span>: 10.1098/rspa.1948.0123
+- <span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.106.208
+<span style="color: #8b4513;">doc_url</span>: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRev.108.1175/fulltext
+<span style="color: #8b4513;">doi</span>: 10.1103/PhysRev.108.1175
+<span style="color: #8b4513;">files</span>:
 - Theory-of-Superconductivity-Bardeen-J.-and-Cooper-L.-N.-and-Schrieffer-J.-R..pdf
-first_page: '1175'
-full_journal_title: Physical Review
-issue: '5'
-journal: Physical Review
-last_page: '1204'
-pages: 1175--1204
-ref: Theory.of.SuperBardee1957
-title: Theory of Superconductivity
-url: http://link.aps.org/article/10.1103/PhysRev.108.1175
-volume: '108'
-year: '1957'
+<span style="color: #8b4513;">first_page</span>: <span style="color: #50a14f;">'1175'</span>
+<span style="color: #8b4513;">full_journal_title</span>: Physical Review
+<span style="color: #8b4513;">issue</span>: <span style="color: #50a14f;">'5'</span>
+<span style="color: #8b4513;">journal</span>: Physical Review
+<span style="color: #8b4513;">last_page</span>: <span style="color: #50a14f;">'1204'</span>
+<span style="color: #8b4513;">pages</span>: 1175--1204
+<span style="color: #8b4513;">ref</span>: Theory.of.SuperBardee1957
+<span style="color: #8b4513;">title</span>: Theory of Superconductivity
+<span style="color: #8b4513;">url</span>: http://link.aps.org/article/10.1103/PhysRev.108.1175
+<span style="color: #8b4513;">volume</span>: <span style="color: #50a14f;">'108'</span>
+<span style="color: #8b4513;">year</span>: <span style="color: #50a14f;">'1957'</span>
 </pre>
 </div>
 
@@ -391,10 +404,10 @@ In this case I define the following function in my
 
 
 <div class="org-src-container">
-<pre class="src src-sh"><span style="font-weight: bold;">citget</span>() {
-  <span style="font-weight: bold; font-style: italic;">query</span>=$<span style="font-weight: bold; font-style: italic;">1</span>
-  <span style="font-weight: bold;">shift</span>
-  papis explore citations -s <span style="font-style: italic;">"$query"</span> pick cmd <span style="font-style: italic;">"papis add --from doi {doc[doi]} $@"</span>
+<pre class="src src-sh"><span style="color: #0184bc;">citget</span>() {
+  <span style="color: #8b4513;">query</span>=$<span style="color: #8b4513;">1</span>
+  <span style="color: #e44649;">shift</span>
+  papis explore citations -s <span style="color: #50a14f;">"$query"</span> pick cmd <span style="color: #50a14f;">"papis add --from doi {doc[doi]} $@"</span>
 }
 </pre>
 </div>
@@ -473,7 +486,7 @@ For comments check out the <a href="https://www.reddit.com/r/commandline/comment
 <div id="postamble" class="status">
 <p class="date">Date: 06-12-2020 (d-m-y)</p>
 <p class="author">Author: Alejandro Gallo</p>
-<p class="date">Created: 2021-01-30 Sat 15:51</p>
+<p class="date">Created: 2021-02-13 Sat 17:00</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
