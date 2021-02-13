@@ -1,0 +1,268 @@
+#+include: templates/header.org
+#+date: 11-02-2021 (d-m-y)
+
+* A simple youtube bookmark player with raku, mpv and dmenu
+  :PROPERTIES:
+      :header-args:raku+: :comments no
+      :header-args:raku+: :eval no
+      :header-args:raku+: :results none
+      :header-args:raku+: :exports code
+  :END:
+  
+** Introduction
+This document explains in a pedagogical way how to write
+a simple music/video bookmark player with the programming language [[https://raku.org][raku]].
+
+I often find myself discovering nice music on youtube and wanting to recover
+or replay it later.
+Of course I could use a bookmark manager but I want an easy fuzzy searching
+and storing the links in an [[https://orgmode.org][org-mode]] file.
+
+Instead of writing quickly the script and adding it to my script collections, 
+I thought this time I can show how convenient and fun ~raku~ can be in scripting
+these kind of small applications.
+
+Do not worry if you don't understand everything here, it is also meant as
+a teaser so that you go and learn some raku yourself! I think that raku at least
+for scripting is highly underrated.
+
+So let's get to it!
+
+** Main
+
+Raku lets you define a ~MAIN~ function globally where your program starts.
+I like to do this in simple scripts and then it's out of the way.
+
+#+begin_src raku :noweb-ref main-script
+#| A simple playlist manager
+unit sub MAIN();
+#+end_src
+
+Notice that just with this line your application already has an argument parser
+predefined, i.e., if I name the script =,yt=, as I have, then
+
+#+begin_src sh :eval no
+,yt -h
+#+end_src
+
+results in
+
+#+begin_example
+Usage:
+  ,yt -- A simple playlist manager
+#+end_example
+
+You can do much more with this default parser, but for our simple script we do not need it.
+
+In my case, I will store the links to the songs or playlists in an =org-mode= file,
+in your case you might decide otherwise.
+
+I will store the location to my org file in the constant
+=$ORG_LINK_FILE=:
+#+begin_src raku :noweb-ref main-script
+constant $ORG_LINK_FILE = "%*ENV<HOME>/.config/org/yt-playlists.org";
+#+end_src
+
+** Links
+We would like to parse the =org-mode= links appearing in the playlist file,
+an /named/ =org-mode= link looks like this
+
+#+begin_src text
+[[URL][My long and complicated title]]
+#+end_src
+
+Let us define a ~Link~ data structure in a class
+
+#+begin_src raku :noweb-ref main-script
+class Link {
+  has Str $.name;
+  has Str $.url;
+  has Str $.tags;
+}
+#+end_src
+
+Raku has Regexes and Grammars as first-class citizens in the language, let us define a
+simple regex for an ~org-mode~ link
+
+#+begin_src raku :noweb-ref main-script
+my regex org-mode-link {
+  "[["
+    $<url> = <-[\]]>+
+  "]["
+    $<name> = <-[\]]>+
+  "]]"
+}
+#+end_src
+
+notice how convenient it is to define a named regular expression in raku.
+=$<url>= and =$<name>= are a named-captures that will be helpful later on,
+for more information consult the [[https://docs.raku.org/language/regexes#index-entry-declarator_regex-Subrules][raku documentation]].
+
+However, in general I will have my url in a section's header, and in =org-mode=
+you can add tags to headers. Therefore I would also like to parse these tags
+so that I can match the titles easier, the general form of a title
+in ~org-mode~ is
+
+#+begin_src text
+ * [[url][My long and complicated title]]                            :some:tags:
+#+end_src
+
+A simple regular expression matching the tags **for our purposes** is simply
+
+#+begin_src raku :noweb-ref main-script
+my regex org-tags {
+  ":" .* ":" $$
+}
+#+end_src
+
+where ~$$~ denotes the end of a line.
+
+
+** Picking with dmenu
+We will be using [[http://tools.suckless.org/dmenu/][dmenu]] as a pick tool, so we should write
+a function that accepts a list of links and asks for user input
+via dmenu returning a list of selected links.
+
+We can define a function in raku using the ~sub~ keyword,
+so in our case the function would look like this
+
+#+begin_src raku :noweb no-export :noweb-ref main-script
+sub dmenu-link (Link @links) of Array[Link] {
+  <<dmenu-title>>
+  <<dmenu-link-contents>>
+}
+#+end_src
+
+This says, accept as an argument a list of ~Link~ and return an ~Array~
+of ~Link~.
+
+We can define an duck-typed helper function that takes 
+a ~Link~ as an input and returns the text that ~dmenu~ will
+see and offer to the user, in raku we can simply write
+
+=<<dmenu-title>>==
+#+begin_src raku :noweb-ref dmenu-title :tangle no
+my &dmenu-title = {"{.name} {.tags}"};
+#+end_src
+
+In order to feed the text to dmenu we can create a temporary
+file where we will put all the titles of the entries
+and then feed to the dmenu process its contents through
+the ~stdin~ file descriptor:
+
+=<<dmenu-link-contents>>==
+#+begin_src raku :noweb-ref dmenu-link-contents :tangle no
+with "/tmp/,yt.in".IO.open: :rw {
+  .say: @links».&dmenu-title.join: "\n";
+  .close and .open; # we need to close and open, maybe improve?
+  my Str $name = .out.slurp.chomp
+                  given shell "dmenu -i", :in($_), :out;
+  Array[Link].new: @links.grep: {.&dmenu-title eq $name}
+}
+#+end_src
+
+
+** Parsing the ~org-mode~ link file
+
+Let us define the function that will parse the org file and return an =Array= of links.
+In this function we use the [[https://docs.raku.org/syntax/gather%20take][=gather=]] syntax provided by raku, which simplifies
+in this case the building of the resulting array.
+
+Essentially, we simply go through the lines of =$ORG_LINK_FILE=
+and =take= a =Link= only when the line matches
+
+=<<parse-org-regex>>==
+#+begin_src raku :noweb-ref parse-org-regex :tangle no
+<org-mode-link> [\s+ <org-tags>]?
+#+end_src
+
+Notice that in raku we can trigger the evaluation of a code
+whenever a regular expression matches by
+embedding the code inside the regular expression in a code block.
+In this case this looks like this:
+
+=<<parse-links-regex>>==
+#+begin_src raku :noweb-ref parse-links-regex :tangle no :noweb no-export
+/ <<parse-org-regex>>
+  { take
+      Link.new: |hash
+        <name url tags>
+        Z=>
+        ( |$<org-mode-link><name url>
+        , $<org-tags>
+        )».&{.so ?? .Str !! ""}
+  }
+/
+#+end_src
+
+If this seems like [[https://www.perl.com/pub/2000/01/10PerlMyths.html/#Perl_looks_like_line_noise][line noise]] to you, it is normal and I am sorry.
+However, I think it is part of the fun writing and learning raku.
+Of course one should write differently if it is meant to be understood
+by everyone in a team, but for your private short scripts like this one
+you may experiment with what the language has to offer.
+However, you can go **way** wilder than this..
+I'll leave it as an exercise to decipher this bit!
+
+With this, our parsing function looks simply like:
+
+#+begin_src raku :noweb no-export :noweb-ref def-parse-link
+sub parse-links (--> Array[Link]) {
+  Array[Link].new:
+    gather
+      for $ORG_LINK_FILE.IO.lines {
+        .match:
+        <<parse-links-regex>>
+      }
+}
+#+end_src
+
+or expanding all the code to see it in full
+
+#+begin_src raku :noweb yes :tangle no :noweb-ref main-script
+<<def-parse-link>>
+#+end_src
+
+
+** Play the music!
+
+We will be playing the videos and playlists with
+[[https://mpv.io/][mpv]] which uses [[https://youtube-dl.org/][youtube-dl]] to stream the content directly.
+A very simple function to play a ~Link~ will be
+
+#+begin_src raku :noweb-ref main-script
+sub play-with-mpv (Link $l) {
+  say "Playing {$l.name}";
+  shell "mpv {$l.url}";
+}
+#+end_src
+
+and therefore the main program is simply given by
+
+#+begin_src raku :noweb-ref main-script
+.&play-with-mpv
+  for dmenu-link parse-links;
+#+end_src
+
+Notice that in raku one can call a function in this way too,
+akin to [[https://en.wikipedia.org/wiki/Uniform_Function_Call_Syntax][the uniform function call syntax]], so the following
+two calls to =&my-function= are equivalent, i.e., they print
+=Hello world=:
+#+begin_src raku :tangle no
+my &my-function = &say o (* ~ " world");
+my-function "Hello";
+"Hello".&my-function;
+#+end_src
+
+
+** Putting it all together
+
+#+headers: :shebang #!/usr/bin/env raku
+#+headers: :tangle-mode (identity #o755)
+#+headers: :tangle ~/.dotfiles/bin/,yt
+#+begin_src raku :noweb yes
+#!/usr/bin/env raku
+<<main-script>>
+#+end_src
+
+
+#+include: templates/comments.org
