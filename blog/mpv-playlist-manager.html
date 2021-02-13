@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-13 Sat 17:00 -->
+<!-- 2021-02-13 Sat 21:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -605,7 +605,7 @@ A very simple function to play a <code>Link</code> will be
 <div class="org-src-container">
 <pre class="src src-raku"><span style="color: #a626a4;">sub</span> <span style="color: #383a42; background-color: #fafafa;">play-with-mpv</span> (<span style="color: #383a42; background-color: #fafafa;">Link</span> <span style="color: #8b4513;">$</span><span style="color: #8b4513;">l</span>) {
   <span style="color: #383a42; background-color: #fafafa;">say</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">Playing {$l.name}</span><span style="color: #e44649;">";</span>
-  <span style="color: #383a42; background-color: #fafafa;">shell</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">mpv {$l.url}</span><span style="color: #e44649;">";</span>
+  <span style="color: #383a42; background-color: #fafafa;">shell</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">mpv </span><span style="color: #e44649;">'</span><span style="color: #50a14f;">{$l.url}</span><span style="color: #e44649;">'";</span>
 }
 </pre>
 </div>
@@ -688,7 +688,7 @@ two calls to <code>&amp;my-function</code> are equivalent, i.e., they print
 }
 <span style="color: #a626a4;">sub</span> <span style="color: #383a42; background-color: #fafafa;">play-with-mpv</span> (<span style="color: #383a42; background-color: #fafafa;">Link</span> <span style="color: #8b4513;">$</span><span style="color: #8b4513;">l</span>) {
   <span style="color: #383a42; background-color: #fafafa;">say</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">Playing {$l.name}</span><span style="color: #e44649;">";</span>
-  <span style="color: #383a42; background-color: #fafafa;">shell</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">mpv {$l.url}</span><span style="color: #e44649;">";</span>
+  <span style="color: #383a42; background-color: #fafafa;">shell</span> <span style="color: #e44649;">"</span><span style="color: #50a14f;">mpv </span><span style="color: #e44649;">'</span><span style="color: #50a14f;">{$l.url}</span><span style="color: #e44649;">'";</span>
 }
 <span style="color: #e44649;">.</span><span style="color: #8b4513;">&amp;</span><span style="color: #8b4513;">play-with-mpv</span>
   <span style="color: #a626a4;">for</span> <span style="color: #383a42; background-color: #fafafa;">dmenu-link</span> <span style="color: #383a42; background-color: #fafafa;">parse-links</span><span style="color: #e44649;">;</span>
@@ -711,7 +711,7 @@ two calls to <code>&amp;my-function</code> are equivalent, i.e., they print
 <div id="postamble" class="status">
 <p class="date">Date: 11-02-2021 (d-m-y)</p>
 <p class="author">Author: Alejandro Gallo</p>
-<p class="date">Created: 2021-02-13 Sat 17:00</p>
+<p class="date">Created: 2021-02-13 Sat 21:42</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

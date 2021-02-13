@@ -232,7 +232,7 @@ A very simple function to play a ~Link~ will be
 #+begin_src raku :noweb-ref main-script
 sub play-with-mpv (Link $l) {
   say "Playing {$l.name}";
-  shell "mpv {$l.url}";
+  shell "mpv '{$l.url}'";
 }
 #+end_src
 
