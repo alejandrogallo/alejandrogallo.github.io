@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-13 Sat 21:42 -->
+<!-- 2022-07-17 Sun 19:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Alejandro Gallo" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,58 +192,11 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/css/org.css"/>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <style type="text/css">
 nav {
   position: relative;
@@ -253,20 +207,36 @@ nav > a:hover {
 }
 </style>
 
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://tracking.allalx.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
 <nav>
   <a href="/"> HOME </a>
   <a href="/blog"> BLOG </a>
   <a href="/about.html"> ABOUT </a>
 </nav>
 
-<div id="outline-container-orgf994ff6" class="outline-2">
-<h2 id="orgf994ff6">A simple youtube bookmark player with raku, mpv and dmenu</h2>
-<div class="outline-text-2" id="text-orgf994ff6">
+<div id="outline-container-org5fa544b" class="outline-2">
+<h2 id="org5fa544b">A simple youtube bookmark player with raku, mpv and dmenu</h2>
+<div class="outline-text-2" id="text-org5fa544b">
 </div>
 
-<div id="outline-container-org218a158" class="outline-3">
-<h3 id="org218a158">Introduction</h3>
-<div class="outline-text-3" id="text-org218a158">
+<div id="outline-container-org12eee40" class="outline-3">
+<h3 id="org12eee40">Introduction</h3>
+<div class="outline-text-3" id="text-org12eee40">
 <p>
 This document explains in a pedagogical way how to write
 a simple music/video bookmark player with the programming language <a href="https://raku.org">raku</a>.
@@ -297,9 +267,9 @@ So let's get to it!
 </div>
 </div>
 
-<div id="outline-container-orgd762a78" class="outline-3">
-<h3 id="orgd762a78">Main</h3>
-<div class="outline-text-3" id="text-orgd762a78">
+<div id="outline-container-orgcd65891" class="outline-3">
+<h3 id="orgcd65891">Main</h3>
+<div class="outline-text-3" id="text-orgcd65891">
 <p>
 Raku lets you define a <code>MAIN</code> function globally where your program starts.
 I like to do this in simple scripts and then it's out of the way.
@@ -325,7 +295,7 @@ predefined, i.e., if I name the script <code>,yt</code>, as I have, then
 results in
 </p>
 
-<pre class="example">
+<pre class="example" id="orgc5de477">
 Usage:
   ,yt -- A simple playlist manager
 </pre>
@@ -350,9 +320,9 @@ I will store the location to my org file in the constant
 </div>
 </div>
 
-<div id="outline-container-org4a9fa55" class="outline-3">
-<h3 id="org4a9fa55">Links</h3>
-<div class="outline-text-3" id="text-org4a9fa55">
+<div id="outline-container-org084bbbd" class="outline-3">
+<h3 id="org084bbbd">Links</h3>
+<div class="outline-text-3" id="text-org084bbbd">
 <p>
 We would like to parse the <code>org-mode</code> links appearing in the playlist file,
 an <i>named</i> <code>org-mode</code> link looks like this
@@ -428,9 +398,9 @@ where <code>$$</code> denotes the end of a line.
 </div>
 
 
-<div id="outline-container-org822cc32" class="outline-3">
-<h3 id="org822cc32">Picking with dmenu</h3>
-<div class="outline-text-3" id="text-org822cc32">
+<div id="outline-container-orge4b68f7" class="outline-3">
+<h3 id="orge4b68f7">Picking with dmenu</h3>
+<div class="outline-text-3" id="text-orge4b68f7">
 <p>
 We will be using <a href="http://tools.suckless.org/dmenu/">dmenu</a> as a pick tool, so we should write
 a function that accepts a list of links and asks for user input
@@ -493,9 +463,9 @@ the <code>stdin</code> file descriptor:
 </div>
 
 
-<div id="outline-container-orgdcda050" class="outline-3">
-<h3 id="orgdcda050">Parsing the <code>org-mode</code> link file</h3>
-<div class="outline-text-3" id="text-orgdcda050">
+<div id="outline-container-org7b0a470" class="outline-3">
+<h3 id="org7b0a470">Parsing the <code>org-mode</code> link file</h3>
+<div class="outline-text-3" id="text-org7b0a470">
 <p>
 Let us define the function that will parse the org file and return an <code>Array</code> of links.
 In this function we use the <a href="https://docs.raku.org/syntax/gather%20take"><code>gather</code></a> syntax provided by raku, which simplifies
@@ -593,9 +563,9 @@ or expanding all the code to see it in full
 </div>
 
 
-<div id="outline-container-org7d42d9e" class="outline-3">
-<h3 id="org7d42d9e">Play the music!</h3>
-<div class="outline-text-3" id="text-org7d42d9e">
+<div id="outline-container-orgae7d2e0" class="outline-3">
+<h3 id="orgae7d2e0">Play the music!</h3>
+<div class="outline-text-3" id="text-orgae7d2e0">
 <p>
 We will be playing the videos and playlists with
 <a href="https://mpv.io/">mpv</a> which uses <a href="https://youtube-dl.org/">youtube-dl</a> to stream the content directly.
@@ -636,9 +606,9 @@ two calls to <code>&amp;my-function</code> are equivalent, i.e., they print
 </div>
 
 
-<div id="outline-container-org8a431c7" class="outline-3">
-<h3 id="org8a431c7">Putting it all together</h3>
-<div class="outline-text-3" id="text-org8a431c7">
+<div id="outline-container-org8195ff0" class="outline-3">
+<h3 id="org8195ff0">Putting it all together</h3>
+<div class="outline-text-3" id="text-org8195ff0">
 <div class="org-src-container">
 <pre class="src src-raku"><span style="color: #a0a1a7;">#!/usr/bin/env raku</span>
 <span style="color: #a0a1a7;">#| A simple playlist manager</span>
@@ -711,8 +681,8 @@ two calls to <code>&amp;my-function</code> are equivalent, i.e., they print
 <div id="postamble" class="status">
 <p class="date">Date: 11-02-2021 (d-m-y)</p>
 <p class="author">Author: Alejandro Gallo</p>
-<p class="date">Created: 2021-02-13 Sat 21:42</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2022-07-17 Sun 19:06</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
