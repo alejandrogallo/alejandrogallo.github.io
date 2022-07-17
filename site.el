@@ -3,8 +3,7 @@
 (setq package-enable-at-startup nil)
 (setq package-archives
   '(("gnu"   . "http://elpa.gnu.org/packages/")
-    ("melpa" . "http://melpa.org/packages/"   )
-    ("org"   . "http://orgmode.org/elpa/"     )))
+    ("melpa" . "http://melpa.org/packages/"   )))
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -25,8 +24,8 @@
 
 (require 'org)
 
-(use-package org-plus-contrib
-             :ensure t)
+; (use-package org-plus-contrib
+;             :ensure t)
 
 (use-package org-src
              :ensure t)
