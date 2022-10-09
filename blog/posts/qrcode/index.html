@@ -262,7 +262,13 @@ function generate_qrcode() {
     new QRCode(qrcode,
                `WIFI:S:${ssid};T:WPA;P:${pass};;`);
 }
-window.addEventListener("load", generate_qrcode);
+
+function init() {
+    document.getElementById("ssid").focus()
+    generate_qrcode()
+}
+
+window.addEventListener("load", init);
 </script>
 <h2 id="how-it-works">How it works<a hidden class="anchor" aria-hidden="true" href="#how-it-works">#</a></h2>
 <p>Many people often ask me how I generated the QRCode for my Wireless
