@@ -1,7 +1,7 @@
 +++
 title = "Install maxima to use in common lisp"
 author = ["Alejandro Gallo"]
-date = 2022-10-09T00:00:00+02:00
+date = 2022-10-25T00:00:00+02:00
 tags = ["lisp", "maxima"]
 draft = false
 +++
