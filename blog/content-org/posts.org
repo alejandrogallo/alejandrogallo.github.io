@@ -735,20 +735,26 @@ EOF
   <input type="text" id="ssid" placeholder="Network Name" oninput="generate_qrcode()">
   <br>
   <input type="password" id="pass" placeholder="Password" oninput="generate_qrcode()">
+  <br>
+  <code id="qrstring">
+  </code>
 </center>
 
 <script>
 function generate_qrcode() {
     let ssid = document.getElementById("ssid").value,
         pass = document.getElementById("pass").value,
+        qrstring = document.getElementById("qrstring"),
         qrcode = document.getElementById("qrcode");
+
+    let code = `WIFI:S:${ssid};T:WPA;P:${pass};;`
+    qrstring.innerHTML = code
 
     while (qrcode.lastChild) {
         qrcode.removeChild(qrcode.lastChild);
     }
 
-    new QRCode(qrcode,
-               `WIFI:S:${ssid};T:WPA;P:${pass};;`);
+    new QRCode(qrcode, code);
 }
 
 function init() {
