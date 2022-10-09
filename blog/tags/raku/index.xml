@@ -6,14 +6,12 @@
     <description>Recent content in raku on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
-    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/raku/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A simple youtube bookmark player with raku, mpv and dmenu</title>
       <link>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</guid>
       <description>Introduction This document explains in a pedagogical way how to write a simple music/video bookmark player with the programming language raku.
 I often find myself discovering nice music on youtube and wanting to recover or replay it later. Of course I could use a bookmark manager but I want an easy fuzzy searching and storing the links in an org-mode file.

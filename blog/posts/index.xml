@@ -6,14 +6,12 @@
     <description>Recent content in Posts on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
-    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WLAN QRcode generator</title>
       <link>https://alejandrogallo.github.io/blog/posts/qrcode/</link>
       <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/qrcode/</guid>
       <description>How it works Many people often ask me how I generated the QRCode for my Wireless network, so I decided to write this for them. Nowadays it is quite often that the routers come with the QRcode already baked in or they provide ways of generating the QRcode through their admin webiste. However not everyone is able to easily access to the router admin page or maybe some other websites on the internet are full of ads or are simply too slow.</description>
     </item>
@@ -22,7 +20,7 @@
       <title>Install maxima to use in common lisp</title>
       <link>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0200</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</guid>
       <description>One of the nice things of common lisp is that it allows you to use very high quality libraries like maxima. It might not be clear for everyone how to install maxima in an easy way to use from common lisp maybe through quicklisp. This short post shows just a way of doing it.
 In principle you can just clone the maxima repository and compile it like an autotools project, provided you pass to the configure script the lisp implementation that you are going to use.</description>
@@ -32,7 +30,7 @@ In principle you can just clone the maxima repository and compile it like an aut
       <title>A simple youtube bookmark player with raku, mpv and dmenu</title>
       <link>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</guid>
       <description>Introduction This document explains in a pedagogical way how to write a simple music/video bookmark player with the programming language raku.
 I often find myself discovering nice music on youtube and wanting to recover or replay it later. Of course I could use a bookmark manager but I want an easy fuzzy searching and storing the links in an org-mode file.
@@ -43,7 +41,7 @@ Instead of writing quickly the script and adding it to my script collections, I 
       <title>Getting paper references with papis</title>
       <link>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</link>
       <pubDate>Sun, 06 Dec 2020 00:00:00 +0100</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</guid>
       <description>Today I would like to talk about how I normally download references of papers using the tool Papis. I will be writing in the future more posts about this tool and about how it makes my life easier.
 Usually when I am researching a topic and I read a paper about it, I want to check out some references cited in the paper. However, I find it very tiresome to copy the reference or the link (if any is available in the pdf), paste it in the browser and download it with papis.</description>
@@ -53,7 +51,7 @@ Usually when I am researching a topic and I read a paper about it, I want to che
       <title>Building a split keyboard with recycled switches</title>
       <link>https://alejandrogallo.github.io/blog/posts/acris/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0100</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/acris/</guid>
       <description>So, the other day doing dumpster diving I found an interesting piece of history, here are some crappy shots I took
 At first while in the dumpster I thought they switches where some kind of KPT switches I saw once online, to my surprise after desoldering the switches I found out they were actually Tec switches and the only information I could find online was in deskthority.

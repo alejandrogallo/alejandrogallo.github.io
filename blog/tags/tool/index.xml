@@ -6,14 +6,12 @@
     <description>Recent content in tool on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
-    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WLAN QRcode generator</title>
       <link>https://alejandrogallo.github.io/blog/posts/qrcode/</link>
       <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      
       <guid>https://alejandrogallo.github.io/blog/posts/qrcode/</guid>
       <description>How it works Many people often ask me how I generated the QRCode for my Wireless network, so I decided to write this for them. Nowadays it is quite often that the routers come with the QRcode already baked in or they provide ways of generating the QRcode through their admin webiste. However not everyone is able to easily access to the router admin page or maybe some other websites on the internet are full of ads or are simply too slow.</description>
     </item>
