@@ -1,0 +1,52 @@
+baseURL: 'https://alejandrogallo.github.io/blog'
+languageCode: 'en-us'
+title: "Ale's Ecke"
+theme: 'PaperMod'
+
+markup.goldmark.renderer:
+  unsafe: true
+
+params:
+  env: production
+  title: "Ale's Ecke"
+  description: "A blog about science, technology and thoughts"
+  keywords: [Blog, Portfolio, Science, QuantumChemistry, Raku, Lisp, Haskell,
+             DFT, Hartree-Fock]
+  author: "Alejandro Gallo"
+  #images: []
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  # disableSpecial1stPost: false
+  # disableScrollToTop: false
+  # comments: true
+  # hidemeta: false
+  # hideSummary: true
+  showtoc: true
+  # tocopen: false
+
+author:
+  name: "Alejandro Gallo"
+  email: = "aamsgallo@gmail.cok"
+
+social:
+  github: "alejandrogallo"
+  googlescholar: "alejandrogallo"
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20

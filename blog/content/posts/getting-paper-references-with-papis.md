@@ -1,11 +1,14 @@
-#+include: templates/header.org
-#+date: 06-12-2020 (d-m-y)
-
-* Getting paper references with papis
++++
+title = "Getting paper references with papis"
+author = ["Alejandro Gallo"]
+date = 2020-12-06T00:00:00+01:00
+tags = ["papis"]
+draft = false
++++
 
 Today I would like to talk about how I normally
 download references of papers using
-the tool [[https://github.com/papis/papis][Papis]].
+the tool [Papis](https://github.com/papis/papis).
 I will be writing in the future more posts about
 this tool and about how it makes my life easier.
 
@@ -22,8 +25,7 @@ tell you exactly how.
 To see how this works we are going to work with the following
 landmark paper:
 
-
-#+begin_src bibtex :exports code :results nil
+```bibtex
 @article{Theory.of.SuperBardee1957,
   author = {Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.},
   doi = {10.1103/PhysRev.108.1175},
@@ -35,23 +37,25 @@ landmark paper:
   volume = {108},
   year = {1957},
 }
-#+end_src
+```
 
 Right now when papis adds a paper through the
-~doi~ importer, i.e., when you do something like
+`doi` importer, i.e., when you do something like
 
-#+begin_src shell
+```shell
 papis add --from doi 10.1103/PhysRev.108.1175
-#+end_src
+```
+
 or simply
-#+begin_src shell
+
+```shell
 papis add 10.1103/PhysRev.108.1175
-#+end_src
+```
 
 you get information similar to the following
-in the ~info.yaml~ file
+in the `info.yaml` file
 
-#+begin_src yaml
+```yaml
 abbrev_journal_title: Phys. Rev.
 author: Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.
 author_list:
@@ -109,37 +113,36 @@ title: Theory of Superconductivity
 url: http://link.aps.org/article/10.1103/PhysRev.108.1175
 volume: '108'
 year: '1957'
-#+end_src
+```
 
-Take a look at the ~citations~ section,
-we get a list of *most* ~doi~ strings referenced in the paper.
+Take a look at the `citations` section,
+we get a list of **most** `doi` strings referenced in the paper.
 
-Papis has a command called ~explore~ which offers much functionality.
-One of the subcommands of ~explore~ is called ~citations~, so that
-you can explore the citations in the ~citations~ field of your
+Papis has a command called `explore` which offers much functionality.
+One of the subcommands of `explore` is called `citations`, so that
+you can explore the citations in the `citations` field of your
 info file.
 Since explore commands are quite long, I normally define
-a ~bash~ function or an alias to use them.
+a `bash` function or an alias to use them.
 In this case I define the following function in my
-[[https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work][~/.bashrc]] file
+[~/.bashrc](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work) file
 
-
-#+begin_src sh
+```sh
 citget() {
   query=$1
   shift
   papis explore citations -s "$query" pick cmd "papis add --from doi {doc[doi]} $@"
 }
-#+end_src
+```
 
 If this seems like a magic incantation to you, let us break it down.
-The help message of the ~citations~ command reads like
-#+begin_src sh :exports both :results verbatim :cache yes
-papis explore citations -h
-#+end_src
+The help message of the `citations` command reads like
 
-#+RESULTS[740ff5551d4bd728d249bb17512fa17cdc1af2d2]:
-#+begin_example
+```sh
+papis explore citations -h
+```
+
+```text
 Usage: papis explore citations [OPTIONS] [QUERY]
 
   Query the citations of a paper
@@ -158,31 +161,24 @@ Options:
 
   --rmfile                     Remove the stored citations file
   -m, --max-citations INTEGER  Number of citations to be retrieved
-#+end_example
+```
 
-The flag ~-s~ means that the citations downloaded should be stored in
-a ~citations.yaml~ file in the document's folder.
+The flag `-s` means that the citations downloaded should be stored in
+a `citations.yaml` file in the document's folder.
 Whichever citation we then choose, we will pass it to the
-~cmd~ command, which accepts a string that will be run in the shell. In this case,
-we select a cited document and apply the ~papis add --from doi {doc[doi]}~
-format, which replaces the ~{doc[doi]}~ part in the format string by
-the ~doi~ of the selected document.
+`cmd` command, which accepts a string that will be run in the shell. In this case,
+we select a cited document and apply the `papis add --from doi {doc[doi]}`
+format, which replaces the `{doc[doi]}` part in the format string by
+the `doi` of the selected document.
 
 Here you can see it in action, it first
-checks if a citation ~doi~ is already in the library,
+checks if a citation `doi` is already in the library,
 in which case the information is already there.
-If the ~doi~ of the citation is not in our library,
-then the infomation gets downloaded via [[http://crossref.org][crossref]].
+If the `doi` of the citation is not in our library,
+then the infomation gets downloaded via [crossref](http://crossref.org).
 
-#+attr_html: :class org-center
-#+begin_center
-#+begin_export html
-<img src="/images/get-paper-references.gif"/>
-#+end_export
-#+end_center
+{{< figure src="/blog/images/get-paper-references.gif" >}}
 
 And this is pretty much it!
 
-For comments check out the [[https://www.reddit.com/r/commandline/comments/k8kbw5/checking_out_paper_references_easily_with_papis/][Reddit post]].
-
-#+include: templates/comments.org
+For comments check out the [Reddit post](https://www.reddit.com/r/commandline/comments/k8kbw5/checking_out_paper_references_easily_with_papis/).

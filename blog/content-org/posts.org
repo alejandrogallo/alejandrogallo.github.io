@@ -1,0 +1,590 @@
+#+HUGO_BASE_DIR: ../
+* Building a split keyboard with recycled switches :keyboards:electronics:haskell:
+:PROPERTIES:
+:EXPORT_DATE: [2020-11-29 Sun]
+:EXPORT_FILE_NAME: acris
+:END:
+
+So, the other day doing dumpster diving I found an interesting piece
+of history, here are some crappy shots I took
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/38.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/39.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/40.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/41.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/42.jpg]]
+
+At first while in the dumpster I thought they switches
+where some kind of KPT switches I saw once online, to my surprise
+after desoldering the switches I found out they were actually
+~Tec~ switches and the only information I could find online was
+in [[https://deskthority.net/wiki/TEC_switch][deskthority]].
+
+Here is a show of the bare board without the keycps
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/9.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/6.jpg]]
+
+and to my delight the keycaps turned out to be double-shot, in very
+nice shape after a thorough clean-up
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/44.jpg]]
+
+#+attr_html: :width 500px
+[[file:/blog/images/acris/58.jpg]]
+
+The switches are clicky and quite frankly not so good.
+I have to say while in the board they sounded better, but in the
+actual project they lost the hollow sound, but still.
+You can hear [[file:/blog/images/acris/5.mp4][here]] how it sounded.
+
+Anyways I wanted to build something with them, so I set out
+to build a quick [[https://atreus.technomancy.us/][atreus]]-like keyboard but in split-mode.
+
+In the future I want to tweak the layouts so I wanted
+to have a simple a nice format for the coordinates
+of every key and no existing solutions quite fit my needs.
+I've been a fan of [[https://asymptote.sourceforge.io][asymptote]] for many years
+but the language and the libraries haven't quite convinced me,
+so I wrote a haskell script to do this using the excellent
+[[https://archives.haskell.org/projects.haskell.org/diagrams/doc/manual.html][diagrams]] library.
+
+The result is in [[https://github.com/alejandrogallo/split-atreus][this repository]]. To do quickly a keyboard without
+many tools I just bought some thin wood sheets and created
+the first test for the layout:
+
+[[file:/blog/images/acris/Nammu-Tec-left.svg]]
+
+In principle the idea is to drill holes where the *three*
+switch's legs are and glue the bottom of the switch to the
+wood (yes, I know is not the best way to go but well, at least
+I'm recycling).
+
+Here I am punching holes into the wood to have a guide
+for the *hand drill*
+
+#+attr_html: :width 500px
+file:/blog/images/acris/100.jpg
+
+and after much work, this is what I got
+
+#+attr_html: :width 500px
+file:/blog/images/acris/62.jpg
+#+attr_html: :width 500px
+file:/blog/images/acris/61.jpg
+
+which in total ends up looking like this
+
+#+attr_html: :width 500px
+file:/blog/images/acris/53.jpg
+
+#+attr_html: :width 500px
+file:/blog/images/acris/4.jpg
+
+#+attr_html: :width 500px
+file:/blog/images/acris/11.jpg
+
+Although we are almost there, it is not over.
+It is not so nice to leave the sides open to dust
+and other inconvenients, so I would like to cover them.
+I bought some 3mm wood sticks to cover the sides
+by gluing them together and some plexiglass to
+have the front panel be able to shine light through.
+
+Here you see the raw material and I cut
+myself a bit cutting this plexiglass,
+so be careful!
+
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863206.jpg
+
+Next time I will document better the process of
+gluing everything together and so on, but since it was
+so messy I kind of forget.
+After sanding the edges it is a fair enough result.
+
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863203.jpg
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863204.jpg
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863207.jpg
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863208.jpg
+#+attr_html: :width 500px
+file:/blog/images/acris/photo5339261905551863211.jpg
+
+And that's all, if I find time and people are interested
+I will at some point write a tutorial of how
+to write from scratch a
+[[https://docs.qmk.fm/#/][quantum mechanical keyboard]] configuration for
+a hand-wired split keyboard.
+
+If you have comments you
+can take a look at this
+reddit
+[[https://www.reddit.com/r/MechanicalKeyboards/comments/k2za9a/handwired_split_mechanical_keyboard_with_recycles/][thread]].
+
+* Getting paper references with papis                                 :papis:
+:PROPERTIES:
+:EXPORT_FILE_NAME: getting-paper-references-with-papis
+:EXPORT_DATE: [2020-12-06 Sun]
+:END:
+
+Today I would like to talk about how I normally
+download references of papers using
+the tool [[https://github.com/papis/papis][Papis]].
+I will be writing in the future more posts about
+this tool and about how it makes my life easier.
+
+Usually when I am researching a topic and
+I read a paper about it, I want to check out some references
+cited in the paper.
+However, I find it very tiresome to copy the reference
+or the link (if any is available in the pdf),
+paste it in the browser and download it with papis.
+I mean, this is still ok, and sometimes I do exactly this.
+But most of the times, I can do better, and I want to
+tell you exactly how.
+
+To see how this works we are going to work with the following
+landmark paper:
+
+
+#+begin_src bibtex :exports code :results nil
+@article{Theory.of.SuperBardee1957,
+  author = {Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.},
+  doi = {10.1103/PhysRev.108.1175},
+  issue = {5},
+  journal = {Physical Review},
+  pages = {1175--1204},
+  title = {Theory of Superconductivity},
+  url = {http://link.aps.org/article/10.1103/PhysRev.108.1175},
+  volume = {108},
+  year = {1957},
+}
+#+end_src
+
+Right now when papis adds a paper through the
+~doi~ importer, i.e., when you do something like
+
+#+begin_src shell
+papis add --from doi 10.1103/PhysRev.108.1175
+#+end_src
+or simply
+#+begin_src shell
+papis add 10.1103/PhysRev.108.1175
+#+end_src
+
+you get information similar to the following
+in the ~info.yaml~ file
+
+#+begin_src yaml
+abbrev_journal_title: Phys. Rev.
+author: Bardeen, J. and Cooper, L. N. and Schrieffer, J. R.
+author_list:
+- given_name: J.
+  surname: Bardeen
+- given_name: L. N.
+  surname: Cooper
+- given_name: J. R.
+  surname: Schrieffer
+citations:
+- doi: 10.1007/BF01504252
+- doi: 10.1098/rspa.1935.0048
+- doi: 10.1016/S0031-8914(35)90097-0
+- doi: 10.1103/PhysRev.74.562
+- doi: 10.1098/rspa.1953.0040
+- doi: 10.1103/PhysRev.97.1724
+- doi: 10.1007/BFb0109284
+- doi: 10.1007/BF01322787
+- doi: 10.1103/PhysRev.78.477
+- doi: 10.1103/PhysRev.78.487
+- doi: 10.1103/PhysRev.79.845
+- doi: 10.1103/PhysRev.79.167.3
+- doi: 10.1103/PhysRev.80.567
+- doi: 10.1103/PhysRev.81.829
+- doi: 10.1103/RevModPhys.23.261
+- doi: 10.1098/rspa.1952.0212
+- doi: 10.1103/PhysRev.99.1140
+- doi: 10.1103/PhysRev.106.162
+- doi: 10.1103/PhysRev.100.1215
+- doi: 10.1103/PhysRev.102.656
+- doi: 10.1103/PhysRev.102.662
+- doi: 10.1103/PhysRev.104.844
+- doi: 10.1002/prop.19530010302
+- doi: 10.1103/PhysRev.107.354
+- doi: 10.1103/PhysRev.100.481
+- doi: 10.1103/PhysRev.100.502
+- doi: 10.1103/PhysRev.104.1189
+- doi: 10.1103/PhysRev.101.1431
+- doi: 10.1103/PhysRev.107.901
+- doi: 10.1007/BF02856068
+- doi: 10.1098/rspa.1948.0123
+- doi: 10.1103/PhysRev.106.208
+doc_url: http://harvest.aps.org/v2/journals/articles/10.1103/PhysRev.108.1175/fulltext
+doi: 10.1103/PhysRev.108.1175
+files:
+- Theory-of-Superconductivity-Bardeen-J.-and-Cooper-L.-N.-and-Schrieffer-J.-R..pdf
+first_page: '1175'
+full_journal_title: Physical Review
+issue: '5'
+journal: Physical Review
+last_page: '1204'
+pages: 1175--1204
+ref: Theory.of.SuperBardee1957
+title: Theory of Superconductivity
+url: http://link.aps.org/article/10.1103/PhysRev.108.1175
+volume: '108'
+year: '1957'
+#+end_src
+
+Take a look at the ~citations~ section,
+we get a list of *most* ~doi~ strings referenced in the paper.
+
+Papis has a command called ~explore~ which offers much functionality.
+One of the subcommands of ~explore~ is called ~citations~, so that
+you can explore the citations in the ~citations~ field of your
+info file.
+Since explore commands are quite long, I normally define
+a ~bash~ function or an alias to use them.
+In this case I define the following function in my
+[[https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work][~/.bashrc]] file
+
+
+#+begin_src sh
+citget() {
+  query=$1
+  shift
+  papis explore citations -s "$query" pick cmd "papis add --from doi {doc[doi]} $@"
+}
+#+end_src
+
+If this seems like a magic incantation to you, let us break it down.
+The help message of the ~citations~ command reads like
+#+begin_src sh :exports both :results verbatim :cache yes
+papis explore citations -h
+#+end_src
+
+#+RESULTS[740ff5551d4bd728d249bb17512fa17cdc1af2d2]:
+#+begin_example
+Usage: papis explore citations [OPTIONS] [QUERY]
+
+  Query the citations of a paper
+
+  Example:
+
+  Go through the citations of a paper and export it in a yaml file
+
+      papis explore citations 'einstein' export --format yaml einstein.yaml
+
+Options:
+  --doc-folder PATH            Apply action to a document path
+  -h, --help                   Show this message and exit.
+  -s, --save                   Store the citations in the document's folder
+                               for later use
+
+  --rmfile                     Remove the stored citations file
+  -m, --max-citations INTEGER  Number of citations to be retrieved
+#+end_example
+
+The flag ~-s~ means that the citations downloaded should be stored in
+a ~citations.yaml~ file in the document's folder.
+Whichever citation we then choose, we will pass it to the
+~cmd~ command, which accepts a string that will be run in the shell. In this case,
+we select a cited document and apply the ~papis add --from doi {doc[doi]}~
+format, which replaces the ~{doc[doi]}~ part in the format string by
+the ~doi~ of the selected document.
+
+Here you can see it in action, it first
+checks if a citation ~doi~ is already in the library,
+in which case the information is already there.
+If the ~doi~ of the citation is not in our library,
+then the infomation gets downloaded via [[http://crossref.org][crossref]].
+
+
+[[/blog/images/get-paper-references.gif]]
+
+And this is pretty much it!
+
+For comments check out the [[https://www.reddit.com/r/commandline/comments/k8kbw5/checking_out_paper_references_easily_with_papis/][Reddit post]].
+
+
+* A simple youtube bookmark player with raku, mpv and dmenu   :raku:literate:
+  :PROPERTIES:
+      :header-args:raku+: :comments no
+      :header-args:raku+: :eval no
+      :header-args:raku+: :results none
+      :header-args:raku+: :exports code
+  :EXPORT_FILE_NAME: raku-bookmark-manager
+  :EXPORT_DATE: [2021-02-11 Thu]
+  :END:
+  
+** Introduction
+This document explains in a pedagogical way how to write
+a simple music/video bookmark player with the programming language [[https://raku.org][raku]].
+
+I often find myself discovering nice music on youtube and wanting to recover
+or replay it later.
+Of course I could use a bookmark manager but I want an easy fuzzy searching
+and storing the links in an [[https://orgmode.org][org-mode]] file.
+
+Instead of writing quickly the script and adding it to my script collections, 
+I thought this time I can show how convenient and fun ~raku~ can be in scripting
+these kind of small applications.
+
+Do not worry if you don't understand everything here, it is also meant as
+a teaser so that you go and learn some raku yourself! I think that raku at least
+for scripting is highly underrated.
+
+So let's get to it!
+
+** Main
+
+Raku lets you define a ~MAIN~ function globally where your program starts.
+I like to do this in simple scripts and then it's out of the way.
+
+#+begin_src raku :noweb-ref main-script
+#| A simple playlist manager
+unit sub MAIN();
+#+end_src
+
+Notice that just with this line your application already has an argument parser
+predefined, i.e., if I name the script =,yt=, as I have, then
+
+#+begin_src sh :eval no
+,yt -h
+#+end_src
+
+results in
+
+#+begin_example
+Usage:
+  ,yt -- A simple playlist manager
+#+end_example
+
+You can do much more with this default parser, but for our simple script we do not need it.
+
+In my case, I will store the links to the songs or playlists in an =org-mode= file,
+in your case you might decide otherwise.
+
+I will store the location to my org file in the constant
+=$ORG_LINK_FILE=:
+#+begin_src raku :noweb-ref main-script
+constant $ORG_LINK_FILE = "%*ENV<HOME>/.config/org/yt-playlists.org";
+#+end_src
+
+** Links
+We would like to parse the =org-mode= links appearing in the playlist file,
+an /named/ =org-mode= link looks like this
+
+#+begin_src text
+[[URL][My long and complicated title]]
+#+end_src
+
+Let us define a ~Link~ data structure in a class
+
+#+begin_src raku :noweb-ref main-script
+class Link {
+  has Str $.name;
+  has Str $.url;
+  has Str $.tags;
+}
+#+end_src
+
+Raku has Regexes and Grammars as first-class citizens in the language, let us define a
+simple regex for an ~org-mode~ link
+
+#+begin_src raku :noweb-ref main-script
+my regex org-mode-link {
+  "[["
+    $<url> = <-[\]]>+
+  "]["
+    $<name> = <-[\]]>+
+  "]]"
+}
+#+end_src
+
+notice how convenient it is to define a named regular expression in raku.
+=$<url>= and =$<name>= are a named-captures that will be helpful later on,
+for more information consult the [[https://docs.raku.org/language/regexes#index-entry-declarator_regex-Subrules][raku documentation]].
+
+However, in general I will have my url in a section's header, and in =org-mode=
+you can add tags to headers. Therefore I would also like to parse these tags
+so that I can match the titles easier, the general form of a title
+in ~org-mode~ is
+
+#+begin_src text
+ * [[url][My long and complicated title]]                            :some:tags:
+#+end_src
+
+A simple regular expression matching the tags **for our purposes** is simply
+
+#+begin_src raku :noweb-ref main-script
+my regex org-tags {
+  ":" .* ":" $$
+}
+#+end_src
+
+where ~$$~ denotes the end of a line.
+
+
+** Picking with dmenu
+We will be using [[http://tools.suckless.org/dmenu/][dmenu]] as a pick tool, so we should write
+a function that accepts a list of links and asks for user input
+via dmenu returning a list of selected links.
+
+We can define a function in raku using the ~sub~ keyword,
+so in our case the function would look like this
+
+#+begin_src raku :noweb no-export :noweb-ref main-script
+sub dmenu-link (Link @links) of Array[Link] {
+  <<dmenu-title>>
+  <<dmenu-link-contents>>
+}
+#+end_src
+
+This says, accept as an argument a list of ~Link~ and return an ~Array~
+of ~Link~.
+
+We can define an duck-typed helper function that takes 
+a ~Link~ as an input and returns the text that ~dmenu~ will
+see and offer to the user, in raku we can simply write
+
+=<<dmenu-title>>==
+#+begin_src raku :noweb-ref dmenu-title :tangle no
+my &dmenu-title = {"{.name} {.tags}"};
+#+end_src
+
+In order to feed the text to dmenu we can create a temporary
+file where we will put all the titles of the entries
+and then feed to the dmenu process its contents through
+the ~stdin~ file descriptor:
+
+=<<dmenu-link-contents>>==
+#+begin_src raku :noweb-ref dmenu-link-contents :tangle no
+with "/tmp/,yt.in".IO.open: :rw {
+  .say: @links».&dmenu-title.join: "\n";
+  .close and .open; # we need to close and open, maybe improve?
+  my Str $name = .out.slurp.chomp
+                  given shell "dmenu -i", :in($_), :out;
+  Array[Link].new: @links.grep: {.&dmenu-title eq $name}
+}
+#+end_src
+
+
+** Parsing the ~org-mode~ link file
+
+Let us define the function that will parse the org file and return an =Array= of links.
+In this function we use the [[https://docs.raku.org/syntax/gather%20take][=gather=]] syntax provided by raku, which simplifies
+in this case the building of the resulting array.
+
+Essentially, we simply go through the lines of =$ORG_LINK_FILE=
+and =take= a =Link= only when the line matches
+
+=<<parse-org-regex>>==
+#+begin_src raku :noweb-ref parse-org-regex :tangle no
+<org-mode-link> [\s+ <org-tags>]?
+#+end_src
+
+Notice that in raku we can trigger the evaluation of a code
+whenever a regular expression matches by
+embedding the code inside the regular expression in a code block.
+In this case this looks like this:
+
+=<<parse-links-regex>>==
+#+begin_src raku :noweb-ref parse-links-regex :tangle no :noweb no-export
+/ <<parse-org-regex>>
+  { take
+      Link.new: |hash
+        <name url tags>
+        Z=>
+        ( |$<org-mode-link><name url>
+        , $<org-tags>
+        )».&{.so ?? .Str !! ""}
+  }
+/
+#+end_src
+
+If this seems like [[https://www.perl.com/pub/2000/01/10PerlMyths.html/#Perl_looks_like_line_noise][line noise]] to you, it is normal and I am sorry.
+However, I think it is part of the fun writing and learning raku.
+Of course one should write differently if it is meant to be understood
+by everyone in a team, but for your private short scripts like this one
+you may experiment with what the language has to offer.
+However, you can go **way** wilder than this..
+I'll leave it as an exercise to decipher this bit!
+
+With this, our parsing function looks simply like:
+
+#+begin_src raku :noweb no-export :noweb-ref def-parse-link
+sub parse-links (--> Array[Link]) {
+  Array[Link].new:
+    gather
+      for $ORG_LINK_FILE.IO.lines {
+        .match:
+        <<parse-links-regex>>
+      }
+}
+#+end_src
+
+or expanding all the code to see it in full
+
+#+begin_src raku :noweb yes :tangle no :noweb-ref main-script
+<<def-parse-link>>
+#+end_src
+
+
+** Play the music!
+
+We will be playing the videos and playlists with
+[[https://mpv.io/][mpv]] which uses [[https://youtube-dl.org/][youtube-dl]] to stream the content directly.
+A very simple function to play a ~Link~ will be
+
+#+begin_src raku :noweb-ref main-script
+sub play-with-mpv (Link $l) {
+  say "Playing {$l.name}";
+  shell "mpv '{$l.url}'";
+}
+#+end_src
+
+and therefore the main program is simply given by
+
+#+begin_src raku :noweb-ref main-script
+.&play-with-mpv
+  for dmenu-link parse-links;
+#+end_src
+
+Notice that in raku one can call a function in this way too,
+akin to [[https://en.wikipedia.org/wiki/Uniform_Function_Call_Syntax][the uniform function call syntax]], so the following
+two calls to =&my-function= are equivalent, i.e., they print
+=Hello world=:
+#+begin_src raku :tangle no
+my &my-function = &say o (* ~ " world");
+my-function "Hello";
+"Hello".&my-function;
+#+end_src
+
+
+** Putting it all together
+
+#+headers: :shebang #!/usr/bin/env raku
+#+headers: :tangle-mode (identity #o755)
+#+headers: :tangle ~/.dotfiles/bin/,yt
+#+begin_src raku :noweb yes
+#!/usr/bin/env raku
+<<main-script>>
+#+end_src
+

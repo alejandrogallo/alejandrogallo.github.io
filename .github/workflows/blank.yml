@@ -25,5 +25,20 @@ jobs:
       with:
         nix_path: nixpkgs=channel:nixos
 
-    - name: Build blog
+    - name: Build site
       run: nix-shell --run 'make publish'
+
+    - name: Build blog
+      run: nix-shell --run 'make -C blog'
+
+    - name: assemble
+      run: |
+        mkdir build
+        cp -r _templates css images *.html build
+        cp -r blog/public build/blog
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+         branch: gh-pages
+         folder: ./build/
