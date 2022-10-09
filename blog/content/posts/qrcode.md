@@ -28,7 +28,13 @@ function generate_qrcode() {
     new QRCode(qrcode,
                `WIFI:S:${ssid};T:WPA;P:${pass};;`);
 }
-window.addEventListener("load", generate_qrcode);
+
+function init() {
+    document.getElementById("ssid").focus()
+    generate_qrcode()
+}
+
+window.addEventListener("load", init);
 </script>
 
 
