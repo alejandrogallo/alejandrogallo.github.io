@@ -3,8 +3,10 @@ languageCode: 'en-us'
 title: "Ale's Ecke"
 theme: 'PaperMod'
 
-markup.goldmark.renderer:
-  unsafe: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
   env: production
