@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/categories/</link>
+    <description>Recent content in Categories on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</managingEditor>
+    <webMaster>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</webMaster><atom:link href="https://alejandrogallo.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

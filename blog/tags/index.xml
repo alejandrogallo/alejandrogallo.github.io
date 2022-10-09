@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</managingEditor>
+    <webMaster>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</webMaster>
+    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>literate</title>
+      <link>https://alejandrogallo.github.io/blog/tags/literate/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/literate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raku</title>
+      <link>https://alejandrogallo.github.io/blog/tags/raku/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/raku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>papis</title>
+      <link>https://alejandrogallo.github.io/blog/tags/papis/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/papis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>electronics</title>
+      <link>https://alejandrogallo.github.io/blog/tags/electronics/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>haskell</title>
+      <link>https://alejandrogallo.github.io/blog/tags/haskell/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboards</title>
+      <link>https://alejandrogallo.github.io/blog/tags/keyboards/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/keyboards/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

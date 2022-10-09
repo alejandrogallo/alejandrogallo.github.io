@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>raku on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/tags/raku/</link>
+    <description>Recent content in raku on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</managingEditor>
+    <webMaster>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</webMaster>
+    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/raku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A simple youtube bookmark player with raku, mpv and dmenu</title>
+      <link>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
+      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</guid>
+      <description>Introduction This document explains in a pedagogical way how to write a simple music/video bookmark player with the programming language raku.
+I often find myself discovering nice music on youtube and wanting to recover or replay it later. Of course I could use a bookmark manager but I want an easy fuzzy searching and storing the links in an org-mode file.
+Instead of writing quickly the script and adding it to my script collections, I thought this time I can show how convenient and fun raku can be in scripting these kind of small applications.</description>
+    </item>
+    
+  </channel>
+</rss>
