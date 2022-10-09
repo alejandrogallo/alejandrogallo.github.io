@@ -6,14 +6,14 @@
     <description>Recent content in papis on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</managingEditor>
-    <webMaster>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</webMaster>
+    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
+    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/papis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting paper references with papis</title>
       <link>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</link>
       <pubDate>Sun, 06 Dec 2020 00:00:00 +0100</pubDate>
-      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
       <guid>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</guid>
       <description>Today I would like to talk about how I normally download references of papers using the tool Papis. I will be writing in the future more posts about this tool and about how it makes my life easier.
 Usually when I am researching a topic and I read a paper about it, I want to check out some references cited in the paper. However, I find it very tiresome to copy the reference or the link (if any is available in the pdf), paste it in the browser and download it with papis.</description>

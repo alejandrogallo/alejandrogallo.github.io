@@ -6,14 +6,14 @@
     <description>Recent content on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</managingEditor>
-    <webMaster>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</webMaster>
+    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
+    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A simple youtube bookmark player with raku, mpv and dmenu</title>
       <link>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0100</pubDate>
-      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
       <guid>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</guid>
       <description>Introduction This document explains in a pedagogical way how to write a simple music/video bookmark player with the programming language raku.
 I often find myself discovering nice music on youtube and wanting to recover or replay it later. Of course I could use a bookmark manager but I want an easy fuzzy searching and storing the links in an org-mode file.
@@ -24,7 +24,7 @@ Instead of writing quickly the script and adding it to my script collections, I 
       <title>Getting paper references with papis</title>
       <link>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</link>
       <pubDate>Sun, 06 Dec 2020 00:00:00 +0100</pubDate>
-      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
       <guid>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</guid>
       <description>Today I would like to talk about how I normally download references of papers using the tool Papis. I will be writing in the future more posts about this tool and about how it makes my life easier.
 Usually when I am researching a topic and I read a paper about it, I want to check out some references cited in the paper. However, I find it very tiresome to copy the reference or the link (if any is available in the pdf), paste it in the browser and download it with papis.</description>
@@ -34,12 +34,13 @@ Usually when I am researching a topic and I read a paper about it, I want to che
       <title>Building a split keyboard with recycled switches</title>
       <link>https://alejandrogallo.github.io/blog/posts/acris/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0100</pubDate>
-      <author>= &#34;aamsgallo@gmail.cok&#34; (Alejandro Gallo)</author>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
       <guid>https://alejandrogallo.github.io/blog/posts/acris/</guid>
       <description>So, the other day doing dumpster diving I found an interesting piece of history, here are some crappy shots I took
 At first while in the dumpster I thought they switches where some kind of KPT switches I saw once online, to my surprise after desoldering the switches I found out they were actually Tec switches and the only information I could find online was in deskthority.
 Here is a show of the bare board without the keycps</description>
     </item>
+    
     
   </channel>
 </rss>
