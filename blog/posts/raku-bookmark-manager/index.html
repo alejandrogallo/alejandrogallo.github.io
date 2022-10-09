@@ -77,6 +77,21 @@ Instead of writing quickly the script and adding it to my script collections, I 
         });
     });
 </script>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://tracking.allalx.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
 <meta property="og:title" content="A simple youtube bookmark player with raku, mpv and dmenu" />
 <meta property="og:description" content="Introduction This document explains in a pedagogical way how to write a simple music/video bookmark player with the programming language raku.
 I often find myself discovering nice music on youtube and wanting to recover or replay it later. Of course I could use a bookmark manager but I want an easy fuzzy searching and storing the links in an org-mode file.

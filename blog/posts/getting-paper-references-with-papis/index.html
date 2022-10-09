@@ -76,6 +76,21 @@ Usually when I am researching a topic and I read a paper about it, I want to che
         });
     });
 </script>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://tracking.allalx.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
 <meta property="og:title" content="Getting paper references with papis" />
 <meta property="og:description" content="Today I would like to talk about how I normally download references of papers using the tool Papis. I will be writing in the future more posts about this tool and about how it makes my life easier.
 Usually when I am researching a topic and I read a paper about it, I want to check out some references cited in the paper. However, I find it very tiresome to copy the reference or the link (if any is available in the pdf), paste it in the browser and download it with papis." />
