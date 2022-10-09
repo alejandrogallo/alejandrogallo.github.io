@@ -8,6 +8,6 @@ themes/PaperMod:
 	cd $@ && git checkout 3a0a4811cbc07c0bea09ef55b3c1bfb39b48cddd
 
 serve:
-	hugo server --buildDrafts --navigateToChanged --disableFastRender
+	hugo server --buildDrafts --navigateToChanged --disableFastRender --ignoreCache
 
 .PHONY: serve

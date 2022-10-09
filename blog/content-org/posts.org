@@ -592,7 +592,7 @@ my-function "Hello";
 * Install maxima to use in common lisp                          :lisp:maxima:
 :PROPERTIES:
 :EXPORT_FILE_NAME: install-maxima-in-common-lisp
-:EXPORT_DATE: [2022-10-25 Tue]
+:EXPORT_DATE: [2022-09-03 Thu]
 :END:
 
 One of the nice things of common lisp is that it allows you to use
@@ -723,8 +723,8 @@ EOF
 
 * WLAN QRcode generator                                                :tool:
 :PROPERTIES:
-:EXPORT_DATE: [2022-10-09 Sun]
 :EXPORT_FILE_NAME: qrcode
+:EXPORT_DATE: [2022-10-09 Sun]
 :END:
 
 #+begin_export html
@@ -784,3 +784,4 @@ and logs you in automatically.
 
 - The code simply uses the great library by [[https://github.com/davidshimjs][@davidshimjs]]
   [[https://github.com/davidshimjs/qrcodejs][qrcodejs]].
+
