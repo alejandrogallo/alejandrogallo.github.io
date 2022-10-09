@@ -2,3 +2,7 @@ templates
 *html~
 env
 lisp
+/build/
+/blog/static/ltximg/
+/blog/.hugo_build.lock
+/blog/public/
