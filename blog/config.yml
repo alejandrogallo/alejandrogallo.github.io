@@ -32,9 +32,38 @@ params:
   showtoc: true
   # tocopen: false
 
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  socialIcons:
+  #   github: "https://github.com/alejandrogallo"
+  #   googlescholar: "https://github.com"
+
+  # profileMode:
+  #   enabled: true
+  #   title: "<Title>" # optional default will be site title
+  #   subtitle: "This is subtitle"
+  #   imageUrl: "<image link>" # optional
+  #   imageTitle: "<title of image as alt>" # optional
+  #   imageWidth: 120 # custom size
+  #   imageHeight: 120 # custom size
+  #   buttons:
+  #       - name: Archive
+  #         url: "/archive"
+  #       - name: Github
+  #         url: "https://github.com/alejandrogallo/"
+
+
+
 author:
   name: "Alejandro Gallo"
-  email: = "aamsgallo@gmail.cok"
+  email: "aamsgallo@gmail.com"
 
 social:
   github: "alejandrogallo"
@@ -42,11 +71,19 @@ social:
 
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: posts
+      name: posts
+      url: /posts/
       weight: 10
     - identifier: tags
       name: tags
       url: /tags/
+      weight: 10
+    - identifier: search
+      name: search
+      url: /search/
       weight: 20
+    # - identifier: categories
+    #   name: categories
+    #   url: /categories/
+    #   weight: 10
