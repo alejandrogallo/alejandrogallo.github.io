@@ -10,20 +10,11 @@
     <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
     <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>lisp</title>
-      <link>https://alejandrogallo.github.io/blog/tags/lisp/</link>
+      <title>tool</title>
+      <link>https://alejandrogallo.github.io/blog/tags/tool/</link>
       <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
       <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
-      <guid>https://alejandrogallo.github.io/blog/tags/lisp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maxima</title>
-      <link>https://alejandrogallo.github.io/blog/tags/maxima/</link>
-      <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
-      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
-      <guid>https://alejandrogallo.github.io/blog/tags/maxima/</guid>
+      <guid>https://alejandrogallo.github.io/blog/tags/tool/</guid>
       <description></description>
     </item>
     
