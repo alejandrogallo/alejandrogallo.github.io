@@ -8,7 +8,25 @@
     <language>en-us</language>
     <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
     <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
-    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lisp</title>
+      <link>https://alejandrogallo.github.io/blog/tags/lisp/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maxima</title>
+      <link>https://alejandrogallo.github.io/blog/tags/maxima/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/tags/maxima/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>literate</title>
       <link>https://alejandrogallo.github.io/blog/tags/literate/</link>

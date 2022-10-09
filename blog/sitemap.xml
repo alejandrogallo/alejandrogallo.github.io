@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</loc>
-    <lastmod>2021-02-11T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://alejandrogallo.github.io/blog/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/tags/lisp/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/tags/maxima/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/posts/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/tags/</loc>
+    <lastmod>2022-10-09T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</loc>
     <lastmod>2021-02-11T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://alejandrogallo.github.io/blog/tags/literate/</loc>
     <lastmod>2021-02-11T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://alejandrogallo.github.io/blog/posts/</loc>
-    <lastmod>2021-02-11T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://alejandrogallo.github.io/blog/tags/raku/</loc>
-    <lastmod>2021-02-11T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://alejandrogallo.github.io/blog/tags/</loc>
     <lastmod>2021-02-11T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://alejandrogallo.github.io/blog/posts/getting-paper-references-with-papis/</loc>

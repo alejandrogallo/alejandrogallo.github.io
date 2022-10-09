@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
     <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
-    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install maxima to use in common lisp</title>
+      <link>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0200</pubDate>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</guid>
+      <description>One of the nice things of common lisp is that it allows you to use very high quality libraries like maxima. It might not be clear for everyone how to install maxima in an easy way to use from common lisp maybe through quicklisp. This short post shows just a way of doing it.
+In principle you can just clone the maxima repository and compile it like an autotools project, provided you pass to the configure script the lisp implementation that you are going to use.</description>
+    </item>
+    
     <item>
       <title>A simple youtube bookmark player with raku, mpv and dmenu</title>
       <link>https://alejandrogallo.github.io/blog/posts/raku-bookmark-manager/</link>
