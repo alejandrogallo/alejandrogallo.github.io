@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>lisp on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/tags/lisp/</link>
+    <description>Recent content in lisp on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aamsgallo@gmail.com (Alejandro Gallo)</managingEditor>
+    <webMaster>aamsgallo@gmail.com (Alejandro Gallo)</webMaster>
+    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install maxima to use in common lisp</title>
+      <link>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0200</pubDate>
+      <author>aamsgallo@gmail.com (Alejandro Gallo)</author>
+      <guid>https://alejandrogallo.github.io/blog/posts/install-maxima-in-common-lisp/</guid>
+      <description>One of the nice things of common lisp is that it allows you to use very high quality libraries like maxima. It might not be clear for everyone how to install maxima in an easy way to use from common lisp maybe through quicklisp. This short post shows just a way of doing it.
+In principle you can just clone the maxima repository and compile it like an autotools project, provided you pass to the configure script the lisp implementation that you are going to use.</description>
+    </item>
+    
+  </channel>
+</rss>
