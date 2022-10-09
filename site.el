@@ -55,5 +55,5 @@
              :language en
              :exclude ".*templates.*"
              :recursive t))))
-      (message "\x1b[35m∀ Publishing site...\x1b[0m")
+      (message "\x1b[35m∀ Publishing site now...\x1b[0m")
       (org-publish-current-project)))
