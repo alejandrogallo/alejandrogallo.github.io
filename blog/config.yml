@@ -13,7 +13,7 @@ params:
   title: "Ale's Ecke"
   description: "A blog about science, technology and thoughts"
   keywords: [Blog, Portfolio, Science, QuantumChemistry, Raku, Lisp, Haskell,
-             DFT, Hartree-Fock]
+             DFT, Hartree-Fock, functional-programming]
   author: "Alejandro Gallo"
   #images: []
   defaultTheme: auto # dark, light
@@ -65,7 +65,7 @@ params:
 
 author:
   name: "Alejandro Gallo"
-  email: "aamsgallo@gmail.com"
+  email: ""
 
 social:
   github: "alejandrogallo"
