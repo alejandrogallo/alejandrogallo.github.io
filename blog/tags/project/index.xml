@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>project on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/tags/project/</link>
+    <description>Recent content in project on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using p5js with org-mode in emacs</title>
+      <link>https://alejandrogallo.github.io/blog/posts/ob-p5js/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://alejandrogallo.github.io/blog/posts/ob-p5js/</guid>
+      <description>This week I wanted to do some tests with the cool project p5js and I wanted to use it from org-mode.
+Regrettably, there is no package I could find that allows to use p5js in an org-mode document. What&amp;rsquo;s worse however is that apparently you can&amp;rsquo;t have two sketches in a single html file. Of course, to be fair, maybe this is my assessment of the library. As far as I can tell p5js can only deal with a single</description>
+    </item>
+    
+  </channel>
+</rss>
