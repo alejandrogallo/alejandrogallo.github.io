@@ -93,8 +93,8 @@ So for the example below, when I start editing it doing
                   (current-buffer))))
              (lambda
                ()
-               (message "Automatically committing %s" buffer-name)
-               (ale/scratchpad/stage-and-commit)))
+               (message "Automatically committing %s" name)
+               (stage-and-commit name)))
            nil t)
 ```
 
