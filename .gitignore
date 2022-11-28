@@ -6,3 +6,5 @@ lisp
 /blog/static/ltximg/
 /blog/.hugo_build.lock
 /blog/public/
+publications.html
+/blog/content-org/posts.org
