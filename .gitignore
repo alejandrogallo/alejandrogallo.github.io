@@ -7,4 +7,4 @@ lisp
 /blog/.hugo_build.lock
 /blog/public/
 publications.html
-/blog/content-org/posts.org
+/blog/content-org/posts.html
