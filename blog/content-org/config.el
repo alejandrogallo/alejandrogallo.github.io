@@ -1,5 +1,6 @@
 (require 'ox-hugo)
 
+
 (defun blog-make ()
   (interactive)
   (unless (buffer-narrowed-p)
