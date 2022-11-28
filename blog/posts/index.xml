@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editing linear s-expressions</title>
+      <link>https://alejandrogallo.github.io/blog/posts/editing-linear-s-expressions/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://alejandrogallo.github.io/blog/posts/editing-linear-s-expressions/</guid>
+      <description>I have been wanting to edit some s-expressions on single lines, like for instance to edit org-mode macros.
+This is a very short blog post but I just wanted to share this function that allows to edit a linearised s-expression quite trivially.
+For instance in a certain buffer I have a local variable like this
+# Local Variables: # eval: (add-hook &amp;#39;after-save-hook (let ((name (buffer-name (current-buffer)))) (lambda () (message &amp;#34;Automatically committing %s&amp;#34; buffer-name) (ale/scratchpad/stage-and-commit))) nil t) # End: and of course this is extremely annoying to edit.</description>
+    </item>
+    
     <item>
       <title>Using p5js with org-mode in emacs</title>
       <link>https://alejandrogallo.github.io/blog/posts/ob-p5js/</link>
