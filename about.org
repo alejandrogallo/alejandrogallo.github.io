@@ -1,27 +1,27 @@
 #+include: templates/header.org
 * About me
 
-My name is Alejandro Gallo and I am currently
-a physicist at the Technical University of Vienna
-[[https://cqc.itp.tuwien.ac.at]].
-I am currently pursuing a PhD in theoretical
-physics in the field of condensed matter.
+My name is Alejandro Gallo and I am currently a physicist at the
+Technical University of Vienna [[https://cqc.itp.tuwien.ac.at]].
+
+I work in the interface between condensed matter physics, quantum
+chemistry and software engineering.
 
 * Publications
 
-- [[https://journals.aps.org/prb/abstract/10.1103/PhysRevB.105.115111][Coupled cluster theory for the ground and excited states of two-dimensional quantum dots]]
-- [[https://aip.scitation.org/doi/10.1063/5.0050054][Focal-point approach with pair-specific cusp correction for coupled-cluster theory]]
-- [[http://arxiv.org/abs/2010.15071v1][A periodic equation-of-motion coupled-cluster implementation applied to   \(F\)-centers in alkaline earth oxides]]
-- [[https://doi.org/10.1103/physrevlett.123.156401][Duality of Ring and Ladder Diagrams and Its Importance for Many-Electron Perturbation Theories]]
-- [[https://doi.org/10.1021/acs.nanolett.7b01796][Protecting a Diamond Quantum Memory by Charge State Control]]
-- [[https://doi.org/10.5281/zenodo.4276451][On the joint-measurability of observables]]
+#+include: publications.org
 
-* Projects
-I enjoy building things, be it on the computer or with my hands.
-Maybe check out my github profile for some examples [[https://github.com/alejandrogallo][here]].
+* Software
+
+I am the author of several scientific packages like [[https://github.com/cc4s/cc4s][CC4S]], my
+personal [[https://github.com/cc4s/cc4s][SISI4S]] and a high-performance kernel for the =CCSD(T)=
+algorithm [[https://alejandrogallo.github.io/atrip/atrip.html][ATRIP]] with on-going CUDA support.
+
+I enjoy building many things, be it on the computer or with my hands.
+Maybe check out my [[https://github.com/alejandrogallo][github]] profile for some examples [[https://github.com/alejandrogallo][here]].
 - I am the main author and maintainer of [[https://github.com/papis/papis][papis]].
 - I try to optimize my keyboard layout
-  in [[https://github.com/alejandrogallo/split-atreus/][the split keyboard lab]].
+  in [[https://github.com/alejandrogallo/split-atreus/][the split keyboard lab]]. and the [[https://github.com/alejandrogallo/luakh-keymap][QMK לוח]] keymap.
 - I build my own [[https://github.com/alejandrogallo/dikis][dictionaries]] for [[https://github.com/alejandrogallo/python-milon][hebrew]] and [[https://github.com/alejandrogallo/aramorph][arabic]].
 
 

@@ -15,7 +15,7 @@ $(info $(TEMPLATE_LNKS))
 %/templates: _templates
 	ln -vfrs ./_templates $@
 
-.PHONY: publish entr dev watch serve deps
+.PHONY: publish entr dev watch serve deps blog
 
 dev: watch serve
 
@@ -40,3 +40,19 @@ deps: $(DEPS)
 lisp/external/htmlize:
 	mkdir -p ${@D}
 	git clone https://github.com/hniksic/emacs-htmlize $@
+
+publications.bib:
+	papis bibtex add --all gallo:true save publications.bib
+
+publications.org: publication.template
+	papis list \
+		--sort year \
+		--reverse \
+		--template publication.template \
+		--all gallo:true > $@
+	sed -i "s/Gallo, Alejandro/*Gallo, Alejandro*/" publications.org
+	sed -i "s/Alejandro Gallo/*Alejandro Gallo*/" publications.org
+
+
+blog:
+	$(MAKE) -C blog

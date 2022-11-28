@@ -1,0 +1,4 @@
+1. *{doc[title]}* \\
+  /{doc[author]}/\\
+  *{doc[year]}*, {doc[publisher]}
+  [[https://doi.org/{doc[doi]}][doi]]

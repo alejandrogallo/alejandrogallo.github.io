@@ -1,0 +1,40 @@
+1. *Coupled cluster theory for the ground and excited states of two-dimensional quantum dots* \\
+  /Salihbegović, Faruk and *Gallo, Alejandro* and Grüneis, Andreas/\\
+  *2022*, American Physical Society (APS)
+  [[https://doi.org/10.1103/physrevb.105.115111][doi]]
+
+1. *Surface science using coupled cluster theory via local Wannier functions and in-RPA-embedding: The case of water on graphitic carbon nitride* \\
+  /Schäfer, Tobias and *Gallo, Alejandro* and Irmler, Andreas and Hummel, Felix and Grüneis, Andreas/\\
+  *2021*, AIP Publishing
+  [[https://doi.org/10.1063/5.0074936][doi]]
+
+1. *A periodic equation-of-motion coupled-cluster implementation applied to F-centers in alkaline earth oxides* \\
+  /*Gallo, Alejandro* and Hummel, Felix and Irmler, Andreas and Grüneis, Andreas/\\
+  *2021*, AIP Publishing
+  [[https://doi.org/10.1063/5.0035425][doi]]
+
+1. *Focal-point approach with pair-specific cusp correction for coupled-cluster theory* \\
+  /Irmler, Andreas and *Gallo, Alejandro* and Grüneis, Andreas/\\
+  *2021*, AIP Publishing
+  [[https://doi.org/10.1063/5.0050054][doi]]
+
+1. *Duality of Ring and Ladder Diagrams and Its Importance for Many-Electron Perturbation Theories* \\
+  /Irmler, Andreas and *Gallo, Alejandro* and Hummel, Felix and Grüneis, Andreas/\\
+  *2019*, American Physical Society (APS)
+  [[https://doi.org/10.1103/physrevlett.123.156401][doi]]
+
+1. *Protecting a Diamond Quantum Memory by Charge State Control* \\
+  /Pfender, Matthias and Aslam, Nabeel and Simon, Patrick and Antonov, Denis and Thiering, Gergő and Burk, Sina and Fávaro de Oliveira, Felipe and Denisenko, Andrej and Fedder, Helmut and Meijer, Jan and Garrido, Jose A. and Gali, Adam and Teraji, Tokuyuki and Isoya, Junichi and Doherty, Marcus William and Alkauskas, Audrius and *Gallo, Alejandro* and Grüneis, Andreas and Neumann, Philipp and Wrachtrup, Jörg/\\
+  *2017*, American Chemical Society (ACS)
+  [[https://doi.org/10.1021/acs.nanolett.7b01796][doi]]
+
+1. *Ab initio studies of vacancy-impurity complexes in cubic and hexagonal diamond* \\
+  /*Alejandro Gallo*/\\
+  *2016*, University of Stuttgart
+  [[https://doi.org/][doi]]
+
+1. *On the joint-measurability of observables* \\
+  /*Alejandro Gallo*/\\
+  *2014*, Universitat Autònoma de Barcelona
+  [[https://doi.org/10.5281/zenodo.4276451][doi]]
+
