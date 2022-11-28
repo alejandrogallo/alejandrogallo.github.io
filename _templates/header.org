@@ -1,4 +1,4 @@
-#+options: toc:nil
+#+options: toc:nil author:nil creator:nil
 #+author: Alejandro Gallo
 #+html_head: <link rel="stylesheet" type="text/css" href="/css/org.css"/>
 
