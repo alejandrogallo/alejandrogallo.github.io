@@ -42,7 +42,7 @@ lisp/external/htmlize:
 	git clone https://github.com/hniksic/emacs-htmlize $@
 
 publications.bib:
-	papis bibtex add --all gallo:true save publications.bib
+	papis bibtex add --all --query gallo:true save publications.bib
 
 publications.org: publication.template
 	papis list \
