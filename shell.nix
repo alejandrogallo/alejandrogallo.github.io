@@ -4,7 +4,11 @@ pkgs.mkShell {
     python3
     hugo
 
-    emacs
-    # emacsPackages.org-plus-contrib
+    (emacsWithPackages (epkgs: with epkgs; [
+      use-package
+      raku-mode
+      htmlize
+    ]))
+
   ];
 }
