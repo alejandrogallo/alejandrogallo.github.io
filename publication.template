@@ -1,4 +1,4 @@
-1. [[https://doi.org/{doc[doi]}][{doc[title]}]] \\
-  /{doc[author]}/ \\
+1. [[https://doi.org/{doc[doi]}][{doc[title]}]] \\\\
+  /{doc[author]}/ \\\\
   *{doc[year]}*, {doc[publisher]}
   [[https://doi.org/{doc[doi]}][{doc[doi]}]]
