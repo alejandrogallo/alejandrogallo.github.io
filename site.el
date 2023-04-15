@@ -29,8 +29,6 @@
 
 (load-theme 'tsdh-light)
 
-
-
 (defun publish-site ()
   (interactive)
   (let* ((site-file-path (file-name-directory (buffer-file-name)))
