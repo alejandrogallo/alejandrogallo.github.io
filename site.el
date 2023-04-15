@@ -13,9 +13,6 @@
 (eval-when-compile
   (require 'use-package))
 
-;(add-to-list 'load-path "./lisp/external/htmlize")
-;(require 'htmlize)
-
 (use-package htmlize
              :ensure t)
 
