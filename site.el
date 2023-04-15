@@ -24,12 +24,6 @@
 
 (require 'org)
 
-; (use-package org-plus-contrib
-;             :ensure t)
-
-(use-package org-src
-             :ensure t)
-
 (use-package org-src
   :config
   (setq org-src-fontify-natively t
