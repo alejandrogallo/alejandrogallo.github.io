@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>chemistry on Ale&#39;s Ecke</title>
+    <link>https://alejandrogallo.github.io/blog/tags/chemistry/</link>
+    <description>Recent content in chemistry on Ale&#39;s Ecke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convert energy into Hartree energy in emacs</title>
+      <link>https://alejandrogallo.github.io/blog/posts/converting-energy-into-hartree-in-emacs/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://alejandrogallo.github.io/blog/posts/converting-energy-into-hartree-in-emacs/</guid>
+      <description>There is a neat program in emacs which is called (GNU Emacs Calc Manual). Up to now in order to do energy conversion I always wrote small scripts in whatever language to do this.
+Now I discovered that you do these conversions also in emacs, you can do M-x calc, insert an algebraic form typing &#39; followed by 1.5 ev, which inputs 1.5 electron volt into the stack of the calculator.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,11 +6,20 @@
     <description>Recent content in Tags on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chemistry</title>
+      <link>https://alejandrogallo.github.io/blog/tags/chemistry/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://alejandrogallo.github.io/blog/tags/chemistry/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>elisp</title>
       <link>https://alejandrogallo.github.io/blog/tags/elisp/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
       
       <guid>https://alejandrogallo.github.io/blog/tags/elisp/</guid>
       <description></description>
@@ -19,7 +28,7 @@
     <item>
       <title>emacs</title>
       <link>https://alejandrogallo.github.io/blog/tags/emacs/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
       
       <guid>https://alejandrogallo.github.io/blog/tags/emacs/</guid>
       <description></description>

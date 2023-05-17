@@ -6,7 +6,17 @@
     <description>Recent content in elisp on Ale&#39;s Ecke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/elisp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://alejandrogallo.github.io/blog/tags/elisp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convert energy into Hartree energy in emacs</title>
+      <link>https://alejandrogallo.github.io/blog/posts/converting-energy-into-hartree-in-emacs/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://alejandrogallo.github.io/blog/posts/converting-energy-into-hartree-in-emacs/</guid>
+      <description>There is a neat program in emacs which is called (GNU Emacs Calc Manual). Up to now in order to do energy conversion I always wrote small scripts in whatever language to do this.
+Now I discovered that you do these conversions also in emacs, you can do M-x calc, insert an algebraic form typing &#39; followed by 1.5 ev, which inputs 1.5 electron volt into the stack of the calculator.</description>
+    </item>
+    
     <item>
       <title>Editing linear s-expressions</title>
       <link>https://alejandrogallo.github.io/blog/posts/editing-linear-s-expressions/</link>
